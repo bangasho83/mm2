@@ -4,30 +4,60 @@ import { useEffect, useMemo, useState } from "react";
 import { format } from "date-fns";
 import { useDateRange } from "@/components/layout/DateRangeContext";
 import { ClientCard } from "@/components/ClientCard";
-import { MetricCard } from "@/components/MetricCard";
 import { Button } from "@/components/ui/button";
 import { formatNumber } from "@/lib/utils";
-import type { Agency, Client } from "@/lib/schemas";
+import type { Client } from "@/lib/schemas";
 import type { BrandOverview } from "@/lib/types/brand-overview";
 import { useUser } from "@/components/auth/UserContext";
 
 interface HomeClientProps {
   clients: Client[];
-  agency: Agency;
 }
 
 const API_BASE_URL = "https://social-apis-two.vercel.app/api";
 
-export function HomeClient({ clients, agency }: HomeClientProps) {
+export function HomeClient({ clients }: HomeClientProps) {
   const { profile } = useUser();
   const organizationId = (profile?.organization as { id?: string } | undefined)?.id;
   const [apiClients, setApiClients] = useState<Client[]>(clients);
   const [apiTags, setApiTags] = useState<string[]>([]);
   const [brandOverviews, setBrandOverviews] = useState<Record<string, BrandOverview>>({});
   const [activeTag, setActiveTag] = useState<string>("All brands");
-  const { selectedRange, range } = useDateRange();
+  const { range } = useDateRange();
   const fromParam = range?.from ? format(range.from, "yyyy-MM-dd") : "2025-12-01";
   const toParam = range?.to ? format(range.to, "yyyy-MM-dd") : fromParam;
+
+  type BrandApiItem = {
+    id?: string;
+    brandId?: string;
+    client_id?: string;
+    client_name?: string;
+    clientName?: string;
+    name?: string;
+    industry?: string;
+    tier?: string;
+    region?: string;
+    status?: string;
+    manager?: string;
+    tags?: string[];
+    tagCloud?: string[];
+    tag_cloud?: string[];
+    tags_cloud?: string[];
+    followers?: unknown;
+    monthlyReach?: unknown;
+    adSpend?: unknown;
+    engagementRate?: unknown;
+    roas?: unknown;
+    summary?: {
+      followers?: unknown;
+      monthlyReach?: unknown;
+      adSpend?: unknown;
+      engagementRate?: unknown;
+      roas?: unknown;
+    };
+    trend?: unknown;
+    [key: string]: unknown;
+  };
 
   const tagSetFromClients = useMemo(() => {
     const tagSet = new Set<string>();
@@ -36,19 +66,6 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
   }, [apiClients]);
 
   const fallbackClient = clients[0]!;
-  const coerceNumber = (value: unknown) => {
-    if (typeof value === "number") return value;
-    if (typeof value === "string") {
-      const parsed = Number(value);
-      return Number.isNaN(parsed) ? null : parsed;
-    }
-    return null;
-  };
-
-  const getNumber = (value: unknown, fallback: number) => {
-    const normalized = coerceNumber(value);
-    return normalized ?? fallback;
-  };
 
   useEffect(() => {
     if (!organizationId) return;
@@ -56,87 +73,109 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
     let cancelled = false;
 
     const fetchBrands = async () => {
-      const curl = `curl "${API_BASE_URL}/brands?organizationId=${organizationId}"`;
-      console.log("BRAND LIST CURL:", curl);
+      const coerceNumber = (value: unknown) => {
+        if (typeof value === "number") return value;
+        if (typeof value === "string") {
+          const parsed = Number(value);
+          return Number.isNaN(parsed) ? null : parsed;
+        }
+        return null;
+      };
+
+      const getNumber = (value: unknown, fallback: number) => {
+        const normalized = coerceNumber(value);
+        return normalized ?? fallback;
+      };
+
       try {
         const response = await fetch(`${API_BASE_URL}/brands?organizationId=${organizationId}`);
         const data = await response.json().catch(() => ({}));
-        console.log("BRAND LIST RESPONSE:", data);
         if (cancelled) return;
-        const brandsFromApi = Array.isArray(data.brands) ? data.brands : [];
+        const brandsFromApi: BrandApiItem[] = Array.isArray(data.brands)
+          ? (data.brands as BrandApiItem[])
+          : [];
         if (brandsFromApi.length > 0) {
-          const normalized = brandsFromApi.map((brand, index) => {
-            const match =
-              clients.find(
-                (client) =>
-                  client.id === brand.id ||
-                  client.id === brand.brandId ||
-                  client.id === brand.client_id ||
-                  client.name === brand.client_name ||
-                  client.name === brand.clientName
-              ) ?? fallbackClient;
-            const baseSummary = match?.summary ?? {
-              followers: 0,
-              engagementRate: 0,
-              monthlyReach: 0,
-              adSpend: 0,
-              roas: 0
-            };
-            return {
-              ...match,
-              id: brand.client_id ?? brand.id ?? brand.brandId ?? `brand-${index}`,
-              name: brand.client_name ?? brand.clientName ?? brand.name ?? match?.name ?? "Brand",
-              industry: brand.industry ?? match?.industry ?? "Brand",
-              tier: brand.tier ?? match?.tier ?? "Tier 1",
-              region: brand.region ?? match?.region ?? "Global",
-              status: brand.status ?? match?.status ?? "Active",
-              manager: brand.manager ?? match?.manager ?? "Agency",
-              tags:
-                brand.tags ??
-                brand.tagCloud ??
-                brand.tag_cloud ??
-                brand.tags_cloud ??
-                match?.tags ??
-                [],
-              summary: {
-                followers: getNumber(
-                  brand.followers ?? brand.summary?.followers,
-                  baseSummary.followers
-                ),
-                monthlyReach: getNumber(
-                  brand.monthlyReach ?? brand.summary?.monthlyReach,
-                  baseSummary.monthlyReach
-                ),
-                adSpend: getNumber(
-                  brand.adSpend ?? brand.summary?.adSpend,
-                  baseSummary.adSpend
-                ),
-                engagementRate: getNumber(
-                  brand.engagementRate ?? brand.summary?.engagementRate,
-                  baseSummary.engagementRate
-                ),
-                roas: getNumber(brand.roas ?? brand.summary?.roas, baseSummary.roas)
-              },
-              trend: Array.isArray(brand.trend) ? brand.trend : match?.trend ?? [],
-              performance: match?.performance ?? [],
-              channels: match?.channels ?? [],
-              topPosts: match?.topPosts ?? [],
-              campaigns: match?.campaigns ?? [],
-              audience: match?.audience ?? [],
-              cadence:
-                match?.cadence ?? { weeklyPosts: 0, bestTime: "", hashtags: [] },
-              budget: match?.budget ?? { pacing: 0, nextOptimization: "" },
-              deltas:
-                match?.deltas ?? {
-                  impressions: "",
-                  engagement: "",
-                  clicks: "",
-                  spend: "",
-                  revenue: ""
-                }
-            } as Client;
-          });
-          setApiClients(normalized);
+          const normalized = brandsFromApi
+            .map((brand, index) => {
+              const match =
+                clients.find(
+                  (client) =>
+                    client.id === brand.id ||
+                    client.id === brand.brandId ||
+                    client.id === brand.client_id ||
+                    client.name === brand.client_name ||
+                    client.name === brand.clientName
+                ) ?? fallbackClient;
+              const baseSummary = match?.summary ?? {
+                followers: 0,
+                engagementRate: 0,
+                monthlyReach: 0,
+                adSpend: 0,
+                roas: 0
+              };
+              return {
+                ...match,
+                id: brand.client_id ?? brand.id ?? brand.brandId ?? `brand-${index}`,
+                name:
+                  brand.client_name ??
+                  brand.clientName ??
+                  brand.name ??
+                  match?.name ??
+                  "Brand",
+                industry: brand.industry ?? match?.industry ?? "Brand",
+                tier: brand.tier ?? match?.tier ?? "Tier 1",
+                region: brand.region ?? match?.region ?? "Global",
+                status: brand.status ?? match?.status ?? "Active",
+                manager: brand.manager ?? match?.manager ?? "Agency",
+                tags:
+                  brand.tags ??
+                  brand.tagCloud ??
+                  brand.tag_cloud ??
+                  brand.tags_cloud ??
+                  match?.tags ??
+                  [],
+                summary: {
+                  followers: getNumber(
+                    brand.followers ?? brand.summary?.followers,
+                    baseSummary.followers
+                  ),
+                  monthlyReach: getNumber(
+                    brand.monthlyReach ?? brand.summary?.monthlyReach,
+                    baseSummary.monthlyReach
+                  ),
+                  adSpend: getNumber(
+                    brand.adSpend ?? brand.summary?.adSpend,
+                    baseSummary.adSpend
+                  ),
+                  engagementRate: getNumber(
+                    brand.engagementRate ?? brand.summary?.engagementRate,
+                    baseSummary.engagementRate
+                  ),
+                  roas: getNumber(brand.roas ?? brand.summary?.roas, baseSummary.roas)
+                },
+                trend: Array.isArray(brand.trend) ? brand.trend : match?.trend ?? [],
+                performance: match?.performance ?? [],
+                channels: match?.channels ?? [],
+                topPosts: match?.topPosts ?? [],
+                campaigns: match?.campaigns ?? [],
+                audience: match?.audience ?? [],
+                cadence:
+                  match?.cadence ?? { weeklyPosts: 0, bestTime: "", hashtags: [] },
+                budget: match?.budget ?? { pacing: 0, nextOptimization: "" },
+                deltas:
+                  match?.deltas ?? {
+                    impressions: "",
+                    engagement: "",
+                    clicks: "",
+                    spend: "",
+                    revenue: ""
+                  }
+              } as Client;
+            })
+            .filter(Boolean);
+          if (normalized.length > 0) {
+            setApiClients(normalized);
+          }
         }
         const candidateTags =
           data.tags ??
@@ -157,7 +196,7 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
     return () => {
       cancelled = true;
     };
-  }, [organizationId, clients]);
+  }, [organizationId, clients, fallbackClient]);
 
   useEffect(() => {
     if (!apiClients.length) return;
@@ -174,6 +213,7 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
       })
     );
       if (cancelled) return;
+      type DailyDataPoint = { visitors?: { total?: number } };
       const next: Record<string, BrandOverview> = {};
       results.forEach((entry) => {
         if (entry.status !== "fulfilled") return;
@@ -187,7 +227,7 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
           organic,
           adSpend: typeof data?.totals?.meta_ads?.spend === "number" ? data.totals.meta_ads.spend : 0,
           trend: Array.isArray(data?.dailyData)
-            ? data.dailyData.map((day: any) =>
+            ? (data.dailyData as DailyDataPoint[]).map((day) =>
                 typeof day?.visitors?.total === "number" ? day.visitors.total : 0
               )
             : []
@@ -217,24 +257,6 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
   const sortedClients = useMemo(() => {
     return [...filteredClients].sort((a, b) => a.name.localeCompare(b.name));
   }, [filteredClients]);
-
-  const totals = useMemo(() => {
-    return apiClients.reduce(
-      (acc, client) => {
-        const summary = client.summary ?? {};
-        acc.followers += typeof summary.followers === "number" ? summary.followers : 0;
-        acc.reach += typeof summary.monthlyReach === "number" ? summary.monthlyReach : 0;
-        acc.spend += typeof summary.adSpend === "number" ? summary.adSpend : 0;
-        acc.engagement += typeof summary.engagementRate === "number" ? summary.engagementRate : 0;
-        return acc;
-      },
-      { followers: 0, reach: 0, spend: 0, engagement: 0 }
-    );
-  }, [apiClients]);
-
-  const avgEngagement = filteredClients.length
-    ? totals.engagement / filteredClients.length
-    : 0;
 
   return (
     <div className="flex flex-col gap-8">

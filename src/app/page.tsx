@@ -5,7 +5,7 @@ import { agency, clients } from "@/lib/data";
 export default function HomePage() {
   return (
     <AppShell agency={agency}>
-      <HomeClient clients={clients} agency={agency} />
+      <HomeClient clients={clients} />
     </AppShell>
   );
 }
