@@ -2,7 +2,6 @@ import { ToolsShell } from "@/components/layout/ToolsShell";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 const imageTiles = [
   "Nano Banana Edit",
@@ -94,7 +93,7 @@ export default function CreativesPage() {
                 <div className="mx-auto mb-3 h-14 w-14 rounded-full bg-brand-50" />
                 <p className="font-semibold text-ink-800">Ready to Generate</p>
                 <p className="mt-1 text-xs">
-                  Fill out the form on the left and click "Generate Creative" to create AI-powered images tailored to your specifications.
+                  Fill out the form on the left and click &quot;Generate Creative&quot; to create AI-powered images tailored to your specifications.
                 </p>
               </div>
             </CardContent>

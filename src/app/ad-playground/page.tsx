@@ -119,7 +119,7 @@ export default function AdPlaygroundPage() {
               <p className="text-sm text-ink-500">AI-generated campaign strategy and content</p>
             </CardHeader>
             <CardContent className="flex min-h-[520px] items-center justify-center text-center text-sm text-ink-500">
-              Fill out the form and click "Generate Campaign" to see results
+              Fill out the form and click &quot;Generate Campaign&quot; to see results
             </CardContent>
           </Card>
         </div>

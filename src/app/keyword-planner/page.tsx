@@ -59,7 +59,7 @@ export default function KeywordPlannerPage() {
               <CardTitle>Keyword Results</CardTitle>
             </CardHeader>
             <CardContent className="flex min-h-[240px] items-center justify-center text-center text-sm text-ink-500">
-              Select a brand and click "Generate Keywords" to see results here.
+              Select a brand and click &quot;Generate Keywords&quot; to see results here.
             </CardContent>
           </Card>
         </div>

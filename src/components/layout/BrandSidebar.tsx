@@ -93,8 +93,6 @@ export function BrandSidebar({ clients }: { clients: Client[] }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const { range, setRange } = useDateRange();
-  const pathParts = pathname.split("/").filter(Boolean);
-  const routeKey = pathParts[1];
   const activeClientId = searchParams.get("id") ?? clients[0]?.id ?? "";
   const fromParam = range?.from ? format(range.from, "yyyy-MM-dd") : "2025-12-01";
   const toParam = range?.to ? format(range.to, "yyyy-MM-dd") : fromParam;
