@@ -3,6 +3,11 @@ import { adminAuth } from "@/lib/firebase/admin";
 import { SESSION_COOKIE_MAX_AGE, SESSION_COOKIE_NAME } from "@/lib/auth/cookies";
 
 export async function POST(request: Request) {
+  console.log("ADMIN ENV", {
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+    hasKey: !!process.env.FIREBASE_PRIVATE_KEY
+  });
   const { idToken } = (await request.json()) as { idToken?: string };
   if (!idToken) {
     return NextResponse.json({ error: "Missing token" }, { status: 400 });
