@@ -8,9 +8,26 @@ import { auth } from "@/lib/firebase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { UserProvider, useUser } from "@/components/auth/UserContext";
 
-export default function SignupPage() {
+const API_BASE_URL = "https://social-apis-two.vercel.app/api";
+
+async function fetchUserProfile(idToken: string, uid: string) {
+  const curl = `curl "${API_BASE_URL}/users?uid=${uid}" -H "Authorization: Bearer ${idToken}"`;
+  console.log("USER PROFILE CURL:", curl);
+  const response = await fetch(`${API_BASE_URL}/users?uid=${uid}`, {
+    headers: {
+      Authorization: `Bearer ${idToken}`
+    }
+  });
+  const data = await response.json().catch(() => ({}));
+  console.log("USER PROFILE RESPONSE:", data);
+  return data;
+}
+
+function SignupContent() {
   const router = useRouter();
+  const { setProfile } = useUser();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -23,6 +40,8 @@ export default function SignupPage() {
     try {
       const credential = await createUserWithEmailAndPassword(auth, email, password);
       const idToken = await credential.user.getIdToken();
+      const profile = await fetchUserProfile(idToken, credential.user.uid);
+      setProfile(profile);
       const response = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -46,6 +65,8 @@ export default function SignupPage() {
       const provider = new GoogleAuthProvider();
       const credential = await signInWithPopup(auth, provider);
       const idToken = await credential.user.getIdToken();
+      const profile = await fetchUserProfile(idToken, credential.user.uid);
+      setProfile(profile);
       const response = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -116,5 +137,13 @@ export default function SignupPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function SignupPage() {
+  return (
+    <UserProvider>
+      <SignupContent />
+    </UserProvider>
   );
 }

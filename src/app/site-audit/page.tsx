@@ -1,4 +1,5 @@
 import { ToolsShell } from "@/components/layout/ToolsShell";
+import { PageHeader } from "@/components/blocks/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -9,10 +10,10 @@ export default function SiteAuditPage() {
   return (
     <ToolsShell>
       <div className="flex w-full flex-col gap-6">
-        <header className="text-center">
-          <h1 className="font-display text-3xl font-semibold text-ink-900">Site Audit</h1>
-          <p className="text-sm text-ink-500">View and manage your website audit tasks and results (Last 7 days)</p>
-        </header>
+        <PageHeader
+          title="Site Audit"
+          subtitle="View and manage your website audit tasks and results (Last 7 days)"
+        />
 
         <Card>
           <CardHeader>

@@ -1,4 +1,5 @@
 import { ToolsShell } from "@/components/layout/ToolsShell";
+import { PageHeader } from "@/components/blocks/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
@@ -16,10 +17,7 @@ export default function CreativesPage() {
   return (
     <ToolsShell>
       <div className="flex flex-col gap-6">
-        <header className="text-center">
-          <h1 className="font-display text-3xl font-semibold text-ink-900">Creatives</h1>
-          <p className="text-sm text-ink-500">Generate AI-powered creative assets</p>
-        </header>
+        <PageHeader title="Creatives" subtitle="Generate AI-powered creative assets" />
 
         <section className="grid gap-6 lg:grid-cols-[1fr_2fr]">
           <Card>

@@ -1,4 +1,5 @@
 import { ToolsShell } from "@/components/layout/ToolsShell";
+import { PageHeader } from "@/components/blocks/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
@@ -7,9 +8,7 @@ export default function CalendarIdeationPage() {
   return (
     <ToolsShell>
       <div className="flex w-full flex-col gap-6">
-        <header className="text-center">
-          <h1 className="font-display text-3xl font-semibold text-ink-900">Content Calendar</h1>
-        </header>
+        <PageHeader title="Content Calendar" />
 
         <Card>
           <CardHeader>

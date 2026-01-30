@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Card } from "@/components/ui/card";
 import { cn, formatCurrency, formatNumber, formatPercent } from "@/lib/utils";
 
@@ -9,7 +10,7 @@ interface MetricCardProps {
   accent?: string;
 }
 
-export function MetricCard({ label, value, type = "number", delta, accent }: MetricCardProps) {
+function MetricCardBase({ label, value, type = "number", delta, accent }: MetricCardProps) {
   const formatted =
     type === "currency"
       ? formatCurrency(value)
@@ -40,3 +41,5 @@ export function MetricCard({ label, value, type = "number", delta, accent }: Met
     </Card>
   );
 }
+
+export const MetricCard = memo(MetricCardBase);

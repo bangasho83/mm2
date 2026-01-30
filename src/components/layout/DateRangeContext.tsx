@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState, useCallback } from "react";
+import { createContext, useContext, useMemo, useState, useCallback, useEffect } from "react";
 import type { DateRange } from "react-day-picker";
 import { addDays, format, parseISO, isValid } from "date-fns";
 
@@ -50,16 +50,21 @@ export function DateRangeProvider({
   children: React.ReactNode;
 }) {
   const defaultRange = ranges[0] ?? "";
-  const [range, setRange] = useState<DateRange | undefined>(() => {
+  const [range, setRangeState] = useState<DateRange | undefined>(undefined);
+
+  useEffect(() => {
+    if (range) return;
     const fromCookie = parseRangeFromCookie();
-    if (fromCookie?.from) return fromCookie;
-    const to = new Date();
-    const from = addDays(to, -6);
-    return { from, to };
-  });
+    if (fromCookie?.from) {
+      setRangeState(fromCookie);
+      return;
+    }
+    const now = new Date();
+    setRangeState({ from: addDays(now, -6), to: now });
+  }, [range]);
 
   const setRangeAndPersist = useCallback((value?: DateRange) => {
-    setRange(value);
+    setRangeState(value);
     if (value?.from) {
       const payload = JSON.stringify({
         from: format(value.from, "yyyy-MM-dd"),

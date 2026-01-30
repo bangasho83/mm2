@@ -8,10 +8,27 @@ import { auth } from "@/lib/firebase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { UserProvider, useUser } from "@/components/auth/UserContext";
+
+const API_BASE_URL = "https://social-apis-two.vercel.app/api";
+
+async function fetchUserProfile(idToken: string, uid: string) {
+  const curl = `curl "${API_BASE_URL}/users?uid=${uid}" -H "Authorization: Bearer ${idToken}"`;
+  console.log("USER PROFILE CURL:", curl);
+  const response = await fetch(`${API_BASE_URL}/users?uid=${uid}`, {
+    headers: {
+      Authorization: `Bearer ${idToken}`
+    }
+  });
+  const data = await response.json().catch(() => ({}));
+  console.log("USER PROFILE RESPONSE:", data);
+  return data;
+}
 
 function LoginContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { setProfile } = useUser();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -24,6 +41,8 @@ function LoginContent() {
     try {
       const credential = await signInWithEmailAndPassword(auth, email, password);
       const idToken = await credential.user.getIdToken();
+      const profile = await fetchUserProfile(idToken, credential.user.uid);
+      setProfile(profile);
       const response = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -48,6 +67,8 @@ function LoginContent() {
       const provider = new GoogleAuthProvider();
       const credential = await signInWithPopup(auth, provider);
       const idToken = await credential.user.getIdToken();
+      const profile = await fetchUserProfile(idToken, credential.user.uid);
+      setProfile(profile);
       const response = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -129,8 +150,10 @@ function LoginContent() {
 
 export default function LoginPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#d7e1fb]" />}>
-      <LoginContent />
-    </Suspense>
+    <UserProvider>
+      <Suspense fallback={<div className="min-h-screen bg-[#d7e1fb]" />}>
+        <LoginContent />
+      </Suspense>
+    </UserProvider>
   );
 }

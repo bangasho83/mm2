@@ -1,23 +1,41 @@
+import { memo } from "react";
 import { cn } from "@/lib/utils";
 
 function buildPath(data: number[], width: number, height: number) {
+  if (!data.length) return "";
   const max = Math.max(...data);
   const min = Math.min(...data);
   const range = max - min || 1;
-  return data
-    .map((value, index) => {
-      const x = (index / (data.length - 1)) * width;
-      const y = height - ((value - min) / range) * height;
-      return `${index === 0 ? "M" : "L"} ${x.toFixed(2)} ${y.toFixed(2)}`;
-    })
-    .join(" ");
+  const coords = data.map((value, index) => {
+    const x = data.length === 1 ? width : (index / (data.length - 1)) * width;
+    const y = height - ((value - min) / range) * height;
+    return { x, y };
+  });
+
+  if (coords.length === 1) {
+    return `M ${coords[0].x.toFixed(2)} ${coords[0].y.toFixed(2)} L ${width} ${coords[0].y.toFixed(2)}`;
+  }
+
+  let path = `M ${coords[0].x.toFixed(2)} ${coords[0].y.toFixed(2)}`;
+  for (let i = 0; i < coords.length - 1; i += 1) {
+    const prev = coords[i - 1] ?? coords[i];
+    const cur = coords[i];
+    const next = coords[i + 1];
+    const after = coords[i + 2] ?? next;
+    const cp1x = cur.x + (next.x - prev.x) / 6;
+    const cp1y = cur.y + (next.y - prev.y) / 6;
+    const cp2x = next.x - (after.x - cur.x) / 6;
+    const cp2y = next.y - (after.y - cur.y) / 6;
+    path += ` C ${cp1x.toFixed(2)} ${cp1y.toFixed(2)}, ${cp2x.toFixed(2)} ${cp2y.toFixed(2)}, ${next.x.toFixed(2)} ${next.y.toFixed(2)}`;
+  }
+  return path;
 }
 
-export function Sparkline({ data, className }: { data: number[]; className?: string }) {
-  const width = 180;
-  const height = 60;
+function SparklineBase({ data, className }: { data: number[]; className?: string }) {
+  const width = 440;
+  const height = 90;
   const path = buildPath(data, width, height);
-  const fillPath = `${path} L ${width} ${height} L 0 ${height} Z`;
+  const fillPath = path ? `${path} L ${width} ${height} L 0 ${height} Z` : "";
 
   return (
     <svg
@@ -36,3 +54,5 @@ export function Sparkline({ data, className }: { data: number[]; className?: str
     </svg>
   );
 }
+
+export const Sparkline = memo(SparklineBase);

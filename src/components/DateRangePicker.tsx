@@ -10,6 +10,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { useDateRange } from "@/components/layout/DateRangeContext";
+import { useRouter } from "next/navigation";
 
 const presets = [
   { label: "Today", getRange: () => ({ from: new Date(), to: new Date() }) },
@@ -63,6 +64,7 @@ export function DateRangePicker() {
   const { range, setRange } = useDateRange();
   const [open, setOpen] = useState(false);
   const [tempRange, setTempRange] = useState(range);
+  const router = useRouter();
 
   useEffect(() => {
     if (open) {
@@ -121,6 +123,7 @@ export function DateRangePicker() {
                 onClick={() => {
                   setRange(tempRange);
                   setOpen(false);
+                  router.refresh();
                 }}
               >
                 Update

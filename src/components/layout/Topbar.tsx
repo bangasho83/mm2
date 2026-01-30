@@ -15,13 +15,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import type { Agency } from "@/lib/schemas";
 import { DateRangePicker } from "@/components/DateRangePicker";
 import Link from "next/link";
 import { signOut } from "firebase/auth";
 import { auth } from "@/lib/firebase/client";
 import { useRouter } from "next/navigation";
+import { useUser } from "@/components/auth/UserContext";
 
 interface TopbarProps {
   agency: Agency;
@@ -29,6 +30,24 @@ interface TopbarProps {
 
 export function Topbar({ agency }: TopbarProps) {
   const router = useRouter();
+  const { profile } = useUser();
+  const profileRecord = profile as Record<string, unknown> | null;
+  const profileUser = profileRecord?.user as Record<string, unknown> | undefined;
+  const profileName =
+    (profileUser?.name as string | undefined) ??
+    (profileRecord?.name as string | undefined) ??
+    agency.user.name;
+  const profileAvatar =
+    (profileUser?.avatarUrl as string | undefined) ??
+    (profileRecord?.avatarUrl as string | undefined) ??
+    undefined;
+  const profileInitials =
+    (profileName || agency.user.name)
+      .split(" ")
+      .map((part) => part[0])
+      .slice(0, 2)
+      .join("")
+      .toUpperCase() || agency.user.initials;
 
   const handleSignOut = async () => {
     await fetch("/api/auth/logout", { method: "POST" });
@@ -112,12 +131,13 @@ export function Topbar({ agency }: TopbarProps) {
           <DropdownMenuTrigger asChild>
             <button className="flex items-center gap-2 rounded-full border border-ink-100 bg-white px-2 py-1 shadow-sm">
               <Avatar className="h-8 w-8">
-                <AvatarFallback>{agency.user.initials}</AvatarFallback>
+                {profileAvatar ? <AvatarImage src={profileAvatar} alt={profileName} /> : null}
+                <AvatarFallback>{profileInitials}</AvatarFallback>
               </Avatar>
-              <span className="hidden text-sm font-semibold text-ink-700 md:inline">
-                {agency.user.name}
-              </span>
-            </button>
+            <span className="hidden text-sm font-semibold text-ink-700 md:inline">
+              {profileName}
+            </span>
+          </button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuItem>Agency settings</DropdownMenuItem>
