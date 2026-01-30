@@ -72,22 +72,6 @@ const groups = [
   }
 ];
 
-const staticRoutes = new Set([
-  "mood",
-  "ideation",
-  "sales",
-  "sales_trends",
-  "social",
-  "meta",
-  "organic",
-  "pages",
-  "backlinks",
-  "keywords",
-  "app",
-  "gmb",
-  "settings"
-]);
-
 export function BrandSidebar({ clients }: { clients: Client[] }) {
   const router = useRouter();
   const pathname = usePathname();
