@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components/BrandOverviewClient.tsx -> @/components/charts/PerformanceAreaChart\":{\"id\":\"components/BrandOverviewClient.tsx -> @/components/charts/PerformanceAreaChart\",\"files\":[\"static/chunks/_app-pages-browser_src_components_charts_PerformanceAreaChart_tsx.js\"]}}"
