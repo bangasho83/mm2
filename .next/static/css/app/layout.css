@@ -1740,6 +1740,11 @@ body {
   color: rgb(32 40 58 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-brand-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(24 73 180 / var(--tw-text-opacity, 1));
+}
+
 .hover\:shadow-glass:hover {
   --tw-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
   --tw-shadow-colored: 0 12px 40px var(--tw-shadow-color);

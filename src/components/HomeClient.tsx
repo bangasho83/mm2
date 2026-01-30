@@ -102,7 +102,7 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
         </div>
       </section>
 
-      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {filteredClients.map((client) => (
           <ClientCard key={client.id} client={client} />
         ))}

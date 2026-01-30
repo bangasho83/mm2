@@ -98,7 +98,7 @@ export function BrandSocialClient({ data }: BrandSocialClientProps) {
             <CardTitle>{data.facebook.title}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Button variant="link" className="px-0 text-brand-600">
+            <Button variant="ghost" className="px-0 text-brand-600 hover:text-brand-700">
               {data.facebook.cta}
             </Button>
             {data.facebook.posts.map((post) => (
@@ -110,7 +110,7 @@ export function BrandSocialClient({ data }: BrandSocialClientProps) {
                 <p className="mt-2 text-sm font-semibold text-ink-800">{post.title}</p>
                 <div className="mt-3 flex items-center justify-between text-xs text-ink-400">
                   <span>0</span>
-                  <Button variant="link" className="px-0 text-brand-600">
+                  <Button variant="ghost" className="px-0 text-brand-600 hover:text-brand-700">
                     View Post
                   </Button>
                 </div>
@@ -124,7 +124,7 @@ export function BrandSocialClient({ data }: BrandSocialClientProps) {
             <CardTitle>{data.instagram.title}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Button variant="link" className="px-0 text-brand-600">
+            <Button variant="ghost" className="px-0 text-brand-600 hover:text-brand-700">
               {data.instagram.cta}
             </Button>
             {data.instagram.posts.map((post) => (
@@ -136,7 +136,7 @@ export function BrandSocialClient({ data }: BrandSocialClientProps) {
                 <p className="mt-2 text-sm font-semibold text-ink-800">{post.title}</p>
                 <div className="mt-3 flex items-center justify-between text-xs text-ink-400">
                   <span>0</span>
-                  <Button variant="link" className="px-0 text-brand-600">
+                  <Button variant="ghost" className="px-0 text-brand-600 hover:text-brand-700">
                     View Post
                   </Button>
                 </div>
