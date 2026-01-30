@@ -77,7 +77,7 @@ export function BrandSidebar({ clients }: { clients: Client[] }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const { range, setRange } = useDateRange();
-  const activeClientId = searchParams.get("id") ?? clients[0]?.id ?? "";
+  const activeClientId = searchParams?.get("id") ?? clients[0]?.id ?? "";
   const fromParam = range?.from ? format(range.from, "yyyy-MM-dd") : "2025-12-01";
   const toParam = range?.to ? format(range.to, "yyyy-MM-dd") : fromParam;
   const buildQuery = (id: string) =>
@@ -86,9 +86,9 @@ export function BrandSidebar({ clients }: { clients: Client[] }) {
     )}`;
 
   useEffect(() => {
-    const fromValue = searchParams.get("from");
+    const fromValue = searchParams?.get("from");
     if (!fromValue) return;
-    const toValue = searchParams.get("to") ?? fromValue;
+    const toValue = searchParams?.get("to") ?? fromValue;
     const fromDate = parseISO(fromValue);
     const toDate = parseISO(toValue);
     if (!isValid(fromDate) || !isValid(toDate)) return;

@@ -30,6 +30,7 @@ interface SidebarProps {
 
 export function Sidebar({ agency }: SidebarProps) {
   const pathname = usePathname();
+  const safePathname = pathname ?? "";
 
   return (
     <aside className="hidden lg:flex w-72 flex-col gap-6 border-r border-ink-100 bg-white/70 px-6 py-8">
@@ -50,7 +51,7 @@ export function Sidebar({ agency }: SidebarProps) {
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive =
-            item.to === "/" ? pathname === "/" || pathname.startsWith("/brand") : false;
+            item.to === "/" ? safePathname === "/" || safePathname.startsWith("/brand") : false;
           return (
             <Link
               key={item.label}

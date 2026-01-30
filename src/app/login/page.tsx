@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function LoginPage() {
+function LoginContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
@@ -32,7 +32,7 @@ export default function LoginPage() {
       if (!response.ok) {
         throw new Error("Unable to create session");
       }
-      const next = searchParams.get("next") ?? "/";
+      const next = searchParams?.get("next") ?? "/";
       router.push(next);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Login failed");
@@ -56,7 +56,7 @@ export default function LoginPage() {
       if (!response.ok) {
         throw new Error("Unable to create session");
       }
-      const next = searchParams.get("next") ?? "/";
+      const next = searchParams?.get("next") ?? "/";
       router.push(next);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Google sign-in failed");
@@ -124,5 +124,13 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#d7e1fb]" />}>
+      <LoginContent />
+    </Suspense>
   );
 }
