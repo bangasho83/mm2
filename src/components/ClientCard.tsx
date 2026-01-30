@@ -7,11 +7,12 @@ import type { Client } from "@/lib/schemas";
 
 interface ClientCardProps {
   client: Client;
+  href?: string;
 }
 
-export function ClientCard({ client }: ClientCardProps) {
+export function ClientCard({ client, href }: ClientCardProps) {
   return (
-    <Link href={`/brand/${client.id}`} className="group">
+    <Link href={href ?? `/brand/${client.id}`} className="group">
       <Card className="flex h-full flex-col gap-4 border-ink-100 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-glass">
         <div className="flex items-center justify-between">
           <div>

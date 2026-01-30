@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { format } from "date-fns";
 import { useDateRange } from "@/components/layout/DateRangeContext";
 import { ClientCard } from "@/components/ClientCard";
 import { MetricCard } from "@/components/MetricCard";
@@ -15,7 +16,9 @@ interface HomeClientProps {
 
 export function HomeClient({ clients, agency }: HomeClientProps) {
   const [activeTag, setActiveTag] = useState<string>("All brands");
-  const { selectedRange } = useDateRange();
+  const { selectedRange, range } = useDateRange();
+  const fromParam = range?.from ? format(range.from, "yyyy-MM-dd") : "2025-12-01";
+  const toParam = range?.to ? format(range.to, "yyyy-MM-dd") : fromParam;
 
   const tags = useMemo(() => {
     const tagSet = new Set<string>();
@@ -104,7 +107,11 @@ export function HomeClient({ clients, agency }: HomeClientProps) {
 
       <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {filteredClients.map((client) => (
-          <ClientCard key={client.id} client={client} />
+          <ClientCard
+            key={client.id}
+            client={client}
+            href={`/brand?id=${client.id}&from=${fromParam}&to=${toParam}`}
+          />
         ))}
       </section>
 

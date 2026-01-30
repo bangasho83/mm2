@@ -1,7 +1,1 @@
-{
-  "/workspace/page": "app/workspace/page.js",
-  "/page": "app/page.js",
-  "/brand/[clientId]/page": "app/brand/[clientId]/page.js",
-  "/brand/ideation/page": "app/brand/ideation/page.js",
-  "/brand/organic/page": "app/brand/organic/page.js"
-}
+{}

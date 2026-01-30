@@ -19,18 +19,29 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import type { Agency } from "@/lib/schemas";
 import { DateRangePicker } from "@/components/DateRangePicker";
 import Link from "next/link";
+import { signOut } from "firebase/auth";
+import { auth } from "@/lib/firebase/client";
+import { useRouter } from "next/navigation";
 
 interface TopbarProps {
   agency: Agency;
 }
 
 export function Topbar({ agency }: TopbarProps) {
+  const router = useRouter();
+
+  const handleSignOut = async () => {
+    await fetch("/api/auth/logout", { method: "POST" });
+    await signOut(auth);
+    router.push("/login");
+  };
+
   return (
     <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-4 border-b border-ink-100 bg-white/80 px-6 py-4 backdrop-blur-xl">
       <div className="flex flex-1 items-center gap-6">
-        <Link href="/" className="flex items-baseline gap-2">
+        <Link href="/" className="flex items-baseline gap-1">
           <span className="font-display text-lg font-semibold text-ink-900">MetrixMate</span>
-          <span className="text-xs font-semibold text-ink-400">beta</span>
+          <sup className="text-xs font-semibold text-ink-400">beta</sup>
         </Link>
         <nav className="hidden items-center gap-4 xl:flex">
           <Link
@@ -56,11 +67,21 @@ export function Topbar({ agency }: TopbarProps) {
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
-              <DropdownMenuItem>Site Audit</DropdownMenuItem>
-              <DropdownMenuItem>Keyword Planner</DropdownMenuItem>
-              <DropdownMenuItem>Calendar Ideation</DropdownMenuItem>
-              <DropdownMenuItem>Ad Playground</DropdownMenuItem>
-              <DropdownMenuItem>Creatives</DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/site-audit">Site Audit</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/keyword-planner">Keyword Planner</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/calendar-ideation">Calendar Ideation</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/ad-playground">Ad Playground</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/creatives">Creatives</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <button className="flex items-center gap-2 text-sm font-semibold text-ink-700">
@@ -101,7 +122,7 @@ export function Topbar({ agency }: TopbarProps) {
           <DropdownMenuContent align="end">
             <DropdownMenuItem>Agency settings</DropdownMenuItem>
             <DropdownMenuItem>Team access</DropdownMenuItem>
-            <DropdownMenuItem>Sign out</DropdownMenuItem>
+            <DropdownMenuItem onSelect={handleSignOut}>Sign out</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

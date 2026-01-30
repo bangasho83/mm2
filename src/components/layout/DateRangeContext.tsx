@@ -1,8 +1,8 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useMemo, useState, useCallback } from "react";
 import type { DateRange } from "react-day-picker";
-import { format } from "date-fns";
+import { addDays, format, parseISO, isValid } from "date-fns";
 
 interface DateRangeContextValue {
   ranges: string[];
@@ -13,6 +13,35 @@ interface DateRangeContextValue {
 
 const DateRangeContext = createContext<DateRangeContextValue | null>(null);
 
+const COOKIE_NAME = "mm2_date_range";
+
+function readCookie(name: string) {
+  if (typeof document === "undefined") return "";
+  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : "";
+}
+
+function writeCookie(name: string, value: string, days = 30) {
+  if (typeof document === "undefined") return;
+  const maxAge = days * 24 * 60 * 60;
+  document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${maxAge}`;
+}
+
+function parseRangeFromCookie(): DateRange | undefined {
+  const raw = readCookie(COOKIE_NAME);
+  if (!raw) return undefined;
+  try {
+    const parsed = JSON.parse(raw) as { from?: string; to?: string };
+    if (!parsed.from) return undefined;
+    const fromDate = parseISO(parsed.from);
+    const toDate = parsed.to ? parseISO(parsed.to) : fromDate;
+    if (!isValid(fromDate) || !isValid(toDate)) return undefined;
+    return { from: fromDate, to: toDate };
+  } catch {
+    return undefined;
+  }
+}
+
 export function DateRangeProvider({
   ranges,
   children
@@ -21,10 +50,24 @@ export function DateRangeProvider({
   children: React.ReactNode;
 }) {
   const defaultRange = ranges[0] ?? "";
-  const [range, setRange] = useState<DateRange | undefined>({
-    from: new Date(2025, 11, 1),
-    to: new Date(2025, 11, 29)
+  const [range, setRange] = useState<DateRange | undefined>(() => {
+    const fromCookie = parseRangeFromCookie();
+    if (fromCookie?.from) return fromCookie;
+    const to = new Date();
+    const from = addDays(to, -6);
+    return { from, to };
   });
+
+  const setRangeAndPersist = useCallback((value?: DateRange) => {
+    setRange(value);
+    if (value?.from) {
+      const payload = JSON.stringify({
+        from: format(value.from, "yyyy-MM-dd"),
+        to: value.to ? format(value.to, "yyyy-MM-dd") : format(value.from, "yyyy-MM-dd")
+      });
+      writeCookie(COOKIE_NAME, payload);
+    }
+  }, []);
 
   const formattedLabel = useMemo(() => {
     if (!range?.from) return defaultRange;
@@ -40,9 +83,9 @@ export function DateRangeProvider({
       ranges,
       selectedRange: formattedLabel,
       range,
-      setRange
+      setRange: setRangeAndPersist
     }),
-    [ranges, formattedLabel, range]
+    [ranges, formattedLabel, range, setRangeAndPersist]
   );
 
   return <DateRangeContext.Provider value={value}>{children}</DateRangeContext.Provider>;

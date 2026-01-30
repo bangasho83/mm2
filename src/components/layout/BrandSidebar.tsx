@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   LayoutDashboard,
   LayoutList,
@@ -22,6 +22,9 @@ import {
   SelectTrigger,
   SelectValue
 } from "@/components/ui/select";
+import { useEffect } from "react";
+import { useDateRange } from "@/components/layout/DateRangeContext";
+import { format, parseISO, isValid } from "date-fns";
 import type { Client } from "@/lib/schemas";
 
 const groups = [
@@ -88,10 +91,30 @@ const staticRoutes = new Set([
 export function BrandSidebar({ clients }: { clients: Client[] }) {
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const { range, setRange } = useDateRange();
   const pathParts = pathname.split("/").filter(Boolean);
   const routeKey = pathParts[1];
-  const activeClientId =
-    routeKey && !staticRoutes.has(routeKey) ? routeKey : clients[0]?.id ?? "";
+  const activeClientId = searchParams.get("id") ?? clients[0]?.id ?? "";
+  const fromParam = range?.from ? format(range.from, "yyyy-MM-dd") : "2025-12-01";
+  const toParam = range?.to ? format(range.to, "yyyy-MM-dd") : fromParam;
+  const buildQuery = (id: string) =>
+    `?id=${encodeURIComponent(id)}&from=${encodeURIComponent(fromParam)}&to=${encodeURIComponent(
+      toParam
+    )}`;
+
+  useEffect(() => {
+    const fromValue = searchParams.get("from");
+    if (!fromValue) return;
+    const toValue = searchParams.get("to") ?? fromValue;
+    const fromDate = parseISO(fromValue);
+    const toDate = parseISO(toValue);
+    if (!isValid(fromDate) || !isValid(toDate)) return;
+    const currentFrom = range?.from?.getTime();
+    const currentTo = range?.to?.getTime();
+    if (currentFrom === fromDate.getTime() && currentTo === toDate.getTime()) return;
+    setRange({ from: fromDate, to: toDate });
+  }, [searchParams, range, setRange]);
 
   return (
     <aside className="hidden lg:flex w-72 flex-col gap-6 border-r border-ink-100 bg-white/80 px-6 py-8">
@@ -99,7 +122,7 @@ export function BrandSidebar({ clients }: { clients: Client[] }) {
         <Select
           value={activeClientId}
           onValueChange={(value) => {
-            router.push(`/brand/${value}`);
+            router.push(`${pathname}${buildQuery(value)}`);
           }}
         >
           <SelectTrigger className="w-full justify-between rounded-2xl border-ink-100 bg-white">
@@ -123,7 +146,7 @@ export function BrandSidebar({ clients }: { clients: Client[] }) {
             </p>
             {group.items.map((item) => {
               const Icon = item.icon;
-              const href = item.to;
+              const href = `${item.to}${buildQuery(activeClientId)}`;
               return (
                 <Link
                   key={item.label}
