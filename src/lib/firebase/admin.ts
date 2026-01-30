@@ -1,10 +1,11 @@
 import { getApps, initializeApp, cert, App } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 
+const rawPrivateKey = process.env.FIREBASE_PRIVATE_KEY;
 const firebaseAdminConfig = {
   projectId: process.env.FIREBASE_PROJECT_ID,
   clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-  privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n")
+  privateKey: rawPrivateKey?.includes("\\n") ? rawPrivateKey.replace(/\\n/g, "\n") : rawPrivateKey
 };
 
 function initAdminApp(): App {
