@@ -1,0 +1,1696 @@
+{
+  "clients": [
+    {
+      "id": "aurora-bikes",
+      "name": "Amaltaas",
+      "industry": "Retail",
+      "tier": "Enterprise",
+      "region": "North America",
+      "status": "Active",
+      "manager": "Maya Patel",
+      "tags": [
+        "Performance",
+        "Retail",
+        "North America"
+      ],
+      "summary": {
+        "followers": 98240,
+        "engagementRate": 0.034,
+        "monthlyReach": 1324000,
+        "adSpend": 48200,
+        "roas": 4.6
+      },
+      "trend": [
+        48,
+        52,
+        51,
+        59,
+        63,
+        60,
+        62,
+        66,
+        70,
+        68,
+        72,
+        75,
+        79,
+        78,
+        82,
+        85,
+        88,
+        86,
+        90,
+        92
+      ],
+      "performance": [
+        {
+          "date": "2025-12-01",
+          "impressions": 118400,
+          "engagement": 7240,
+          "clicks": 2140,
+          "spend": 2800,
+          "revenue": 12340
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 121900,
+          "engagement": 7520,
+          "clicks": 2210,
+          "spend": 2950,
+          "revenue": 13210
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 126300,
+          "engagement": 7810,
+          "clicks": 2360,
+          "spend": 3100,
+          "revenue": 14020
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 119800,
+          "engagement": 7310,
+          "clicks": 2180,
+          "spend": 2870,
+          "revenue": 12980
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 130400,
+          "engagement": 8120,
+          "clicks": 2480,
+          "spend": 3240,
+          "revenue": 14690
+        },
+        {
+          "date": "2025-12-06",
+          "impressions": 135200,
+          "engagement": 8400,
+          "clicks": 2590,
+          "spend": 3360,
+          "revenue": 15580
+        },
+        {
+          "date": "2025-12-07",
+          "impressions": 129600,
+          "engagement": 7920,
+          "clicks": 2440,
+          "spend": 3180,
+          "revenue": 14940
+        },
+        {
+          "date": "2025-12-08",
+          "impressions": 138900,
+          "engagement": 8580,
+          "clicks": 2680,
+          "spend": 3420,
+          "revenue": 16010
+        },
+        {
+          "date": "2025-12-09",
+          "impressions": 142200,
+          "engagement": 8740,
+          "clicks": 2760,
+          "spend": 3550,
+          "revenue": 16580
+        },
+        {
+          "date": "2025-12-10",
+          "impressions": 144700,
+          "engagement": 8890,
+          "clicks": 2810,
+          "spend": 3620,
+          "revenue": 16990
+        },
+        {
+          "date": "2025-12-11",
+          "impressions": 139800,
+          "engagement": 8520,
+          "clicks": 2640,
+          "spend": 3460,
+          "revenue": 16120
+        },
+        {
+          "date": "2025-12-12",
+          "impressions": 146500,
+          "engagement": 9010,
+          "clicks": 2880,
+          "spend": 3680,
+          "revenue": 17240
+        },
+        {
+          "date": "2025-12-13",
+          "impressions": 150200,
+          "engagement": 9280,
+          "clicks": 2960,
+          "spend": 3820,
+          "revenue": 17960
+        },
+        {
+          "date": "2025-12-14",
+          "impressions": 153800,
+          "engagement": 9420,
+          "clicks": 3030,
+          "spend": 3950,
+          "revenue": 18620
+        }
+      ],
+      "channels": [
+        {
+          "name": "Instagram",
+          "share": 42,
+          "followers": 48200,
+          "engagementRate": 0.038
+        },
+        {
+          "name": "TikTok",
+          "share": 28,
+          "followers": 32100,
+          "engagementRate": 0.051
+        },
+        {
+          "name": "Meta Ads",
+          "share": 19,
+          "followers": 12400,
+          "engagementRate": 0.027
+        },
+        {
+          "name": "Pinterest",
+          "share": 11,
+          "followers": 9540,
+          "engagementRate": 0.022
+        }
+      ],
+      "topPosts": [
+        {
+          "title": "Winter Trail Launch",
+          "type": "Reel",
+          "impressions": 54200,
+          "engagement": 8120,
+          "cta": "Shop Now",
+          "accent": "from-brand-500/20 to-mint-300/30"
+        },
+        {
+          "title": "Live Demo Tour",
+          "type": "Live",
+          "impressions": 41800,
+          "engagement": 6780,
+          "cta": "Reserve Seat",
+          "accent": "from-amber-200/40 to-rose-200/40"
+        },
+        {
+          "title": "Rider Spotlight",
+          "type": "Carousel",
+          "impressions": 38600,
+          "engagement": 5940,
+          "cta": "Meet the Riders",
+          "accent": "from-sky-200/40 to-lime-200/40"
+        },
+        {
+          "title": "Service Tips",
+          "type": "Story",
+          "impressions": 31200,
+          "engagement": 4380,
+          "cta": "Save Tips",
+          "accent": "from-violet-200/40 to-fuchsia-200/40"
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 12400,
+          "roi": 5.2,
+          "goal": "Conversions"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 9800,
+          "roi": 4.1,
+          "goal": "Revenue"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 4620,
+          "roi": 3.4,
+          "goal": "Engagement"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 13600,
+          "roi": 6,
+          "goal": "Awareness"
+        }
+      ],
+      "audience": [
+        {
+          "label": "Adventure commuters",
+          "value": 42
+        },
+        {
+          "label": "Weekend explorers",
+          "value": 33
+        },
+        {
+          "label": "Trail racing",
+          "value": 25
+        }
+      ],
+      "cadence": {
+        "weeklyPosts": 46,
+        "bestTime": "Wed - 6:30 PM",
+        "hashtags": [
+          "gravelride",
+          "wintertrail",
+          "citycommute",
+          "aurorabikes"
+        ]
+      },
+      "budget": {
+        "pacing": 72,
+        "nextOptimization": "Shift 12% spend to high-converting reels"
+      },
+      "deltas": {
+        "impressions": "+12%",
+        "engagement": "+8%",
+        "clicks": "+6%",
+        "spend": "On target",
+        "revenue": "+14%"
+      }
+    },
+    {
+      "id": "bloom-cafe",
+      "name": "Bloom Cafe",
+      "industry": "Hospitality",
+      "tier": "Growth",
+      "region": "West Coast",
+      "status": "Active",
+      "manager": "Leah Chen",
+      "tags": [
+        "Food",
+        "Local",
+        "Lifestyle"
+      ],
+      "summary": {
+        "followers": 42680,
+        "engagementRate": 0.042,
+        "monthlyReach": 612000,
+        "adSpend": 15400,
+        "roas": 3.8
+      },
+      "trend": [
+        32,
+        34,
+        33,
+        36,
+        38,
+        41,
+        40,
+        43,
+        45,
+        44,
+        47,
+        49,
+        50,
+        52,
+        53,
+        51,
+        54,
+        56,
+        57,
+        59
+      ],
+      "performance": [
+        {
+          "date": "2025-12-01",
+          "impressions": 56200,
+          "engagement": 3620,
+          "clicks": 1240,
+          "spend": 980,
+          "revenue": 4820
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 58400,
+          "engagement": 3720,
+          "clicks": 1310,
+          "spend": 1020,
+          "revenue": 4990
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 60200,
+          "engagement": 3810,
+          "clicks": 1360,
+          "spend": 1060,
+          "revenue": 5160
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 55800,
+          "engagement": 3500,
+          "clicks": 1210,
+          "spend": 960,
+          "revenue": 4720
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 61800,
+          "engagement": 3920,
+          "clicks": 1410,
+          "spend": 1100,
+          "revenue": 5300
+        },
+        {
+          "date": "2025-12-06",
+          "impressions": 63200,
+          "engagement": 4010,
+          "clicks": 1460,
+          "spend": 1140,
+          "revenue": 5420
+        },
+        {
+          "date": "2025-12-07",
+          "impressions": 60600,
+          "engagement": 3860,
+          "clicks": 1380,
+          "spend": 1080,
+          "revenue": 5190
+        },
+        {
+          "date": "2025-12-08",
+          "impressions": 64800,
+          "engagement": 4140,
+          "clicks": 1520,
+          "spend": 1180,
+          "revenue": 5580
+        },
+        {
+          "date": "2025-12-09",
+          "impressions": 66200,
+          "engagement": 4210,
+          "clicks": 1560,
+          "spend": 1220,
+          "revenue": 5690
+        },
+        {
+          "date": "2025-12-10",
+          "impressions": 67800,
+          "engagement": 4320,
+          "clicks": 1610,
+          "spend": 1260,
+          "revenue": 5820
+        },
+        {
+          "date": "2025-12-11",
+          "impressions": 64200,
+          "engagement": 4080,
+          "clicks": 1490,
+          "spend": 1160,
+          "revenue": 5520
+        },
+        {
+          "date": "2025-12-12",
+          "impressions": 69100,
+          "engagement": 4380,
+          "clicks": 1680,
+          "spend": 1290,
+          "revenue": 5960
+        },
+        {
+          "date": "2025-12-13",
+          "impressions": 70400,
+          "engagement": 4450,
+          "clicks": 1720,
+          "spend": 1330,
+          "revenue": 6080
+        },
+        {
+          "date": "2025-12-14",
+          "impressions": 72100,
+          "engagement": 4520,
+          "clicks": 1760,
+          "spend": 1370,
+          "revenue": 6190
+        }
+      ],
+      "channels": [
+        {
+          "name": "Instagram",
+          "share": 48,
+          "followers": 24600,
+          "engagementRate": 0.046
+        },
+        {
+          "name": "TikTok",
+          "share": 24,
+          "followers": 10200,
+          "engagementRate": 0.055
+        },
+        {
+          "name": "Meta Ads",
+          "share": 18,
+          "followers": 6200,
+          "engagementRate": 0.029
+        },
+        {
+          "name": "Google",
+          "share": 10,
+          "followers": 1680,
+          "engagementRate": 0.018
+        }
+      ],
+      "topPosts": [
+        {
+          "title": "Latte Lab Drop",
+          "type": "Reel",
+          "impressions": 28600,
+          "engagement": 4180,
+          "cta": "Try the Drop",
+          "accent": "from-rose-200/40 to-amber-200/50"
+        },
+        {
+          "title": "Brunch Boards",
+          "type": "Carousel",
+          "impressions": 25400,
+          "engagement": 3520,
+          "cta": "Book a Table",
+          "accent": "from-lime-200/40 to-emerald-200/40"
+        },
+        {
+          "title": "Morning Rituals",
+          "type": "Story",
+          "impressions": 21400,
+          "engagement": 2840,
+          "cta": "Save Recipe",
+          "accent": "from-sky-200/40 to-violet-200/40"
+        },
+        {
+          "title": "Holiday Gift Cards",
+          "type": "Post",
+          "impressions": 19800,
+          "engagement": 2310,
+          "cta": "Gift Now",
+          "accent": "from-fuchsia-200/40 to-orange-200/40"
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "Seasonal Menu",
+          "status": "Active",
+          "spend": 3600,
+          "roi": 4.3,
+          "goal": "Foot traffic"
+        },
+        {
+          "name": "Neighborhood Night",
+          "status": "Active",
+          "spend": 2100,
+          "roi": 3.1,
+          "goal": "Community"
+        },
+        {
+          "name": "Cafe Cards",
+          "status": "Paused",
+          "spend": 1400,
+          "roi": 2.6,
+          "goal": "Loyalty"
+        },
+        {
+          "name": "Summer Terrace",
+          "status": "Active",
+          "spend": 4200,
+          "roi": 3.8,
+          "goal": "Awareness"
+        }
+      ],
+      "audience": [
+        {
+          "label": "Morning commuters",
+          "value": 46
+        },
+        {
+          "label": "Remote workers",
+          "value": 34
+        },
+        {
+          "label": "Weekend brunch",
+          "value": 20
+        }
+      ],
+      "cadence": {
+        "weeklyPosts": 38,
+        "bestTime": "Thu - 8:00 AM",
+        "hashtags": [
+          "brunchclub",
+          "latteart",
+          "localfavorite",
+          "bloomcafe"
+        ]
+      },
+      "budget": {
+        "pacing": 64,
+        "nextOptimization": "Boost morning menu stories for foot traffic"
+      },
+      "deltas": {
+        "impressions": "+9%",
+        "engagement": "+11%",
+        "clicks": "+7%",
+        "spend": "On target",
+        "revenue": "+10%"
+      }
+    },
+    {
+      "id": "nova-skincare",
+      "name": "Nova Skincare",
+      "industry": "Beauty and Wellness",
+      "tier": "Enterprise",
+      "region": "Global",
+      "status": "Active",
+      "manager": "Imani Rogers",
+      "tags": [
+        "Beauty",
+        "Ecommerce",
+        "Global"
+      ],
+      "summary": {
+        "followers": 214600,
+        "engagementRate": 0.029,
+        "monthlyReach": 2842000,
+        "adSpend": 96200,
+        "roas": 5.1
+      },
+      "trend": [
+        58,
+        60,
+        62,
+        65,
+        67,
+        64,
+        69,
+        71,
+        73,
+        76,
+        74,
+        78,
+        80,
+        82,
+        81,
+        84,
+        86,
+        88,
+        90,
+        92
+      ],
+      "performance": [
+        {
+          "date": "2025-12-01",
+          "impressions": 182400,
+          "engagement": 9240,
+          "clicks": 3120,
+          "spend": 5200,
+          "revenue": 29400
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 187100,
+          "engagement": 9480,
+          "clicks": 3250,
+          "spend": 5340,
+          "revenue": 30160
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 190300,
+          "engagement": 9620,
+          "clicks": 3320,
+          "spend": 5460,
+          "revenue": 30940
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 181600,
+          "engagement": 9180,
+          "clicks": 3080,
+          "spend": 5120,
+          "revenue": 28960
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 194800,
+          "engagement": 9840,
+          "clicks": 3460,
+          "spend": 5640,
+          "revenue": 31820
+        },
+        {
+          "date": "2025-12-06",
+          "impressions": 198600,
+          "engagement": 10040,
+          "clicks": 3560,
+          "spend": 5780,
+          "revenue": 32680
+        },
+        {
+          "date": "2025-12-07",
+          "impressions": 192300,
+          "engagement": 9680,
+          "clicks": 3380,
+          "spend": 5520,
+          "revenue": 31120
+        },
+        {
+          "date": "2025-12-08",
+          "impressions": 201700,
+          "engagement": 10320,
+          "clicks": 3680,
+          "spend": 5920,
+          "revenue": 33490
+        },
+        {
+          "date": "2025-12-09",
+          "impressions": 206900,
+          "engagement": 10560,
+          "clicks": 3780,
+          "spend": 6040,
+          "revenue": 34220
+        },
+        {
+          "date": "2025-12-10",
+          "impressions": 210400,
+          "engagement": 10780,
+          "clicks": 3860,
+          "spend": 6180,
+          "revenue": 35180
+        },
+        {
+          "date": "2025-12-11",
+          "impressions": 203600,
+          "engagement": 10340,
+          "clicks": 3650,
+          "spend": 5880,
+          "revenue": 33360
+        },
+        {
+          "date": "2025-12-12",
+          "impressions": 212800,
+          "engagement": 10890,
+          "clicks": 3920,
+          "spend": 6260,
+          "revenue": 35840
+        },
+        {
+          "date": "2025-12-13",
+          "impressions": 216300,
+          "engagement": 11040,
+          "clicks": 3980,
+          "spend": 6380,
+          "revenue": 36620
+        },
+        {
+          "date": "2025-12-14",
+          "impressions": 219900,
+          "engagement": 11220,
+          "clicks": 4060,
+          "spend": 6520,
+          "revenue": 37490
+        }
+      ],
+      "channels": [
+        {
+          "name": "Instagram",
+          "share": 38,
+          "followers": 112000,
+          "engagementRate": 0.032
+        },
+        {
+          "name": "TikTok",
+          "share": 30,
+          "followers": 68100,
+          "engagementRate": 0.045
+        },
+        {
+          "name": "Meta Ads",
+          "share": 22,
+          "followers": 24500,
+          "engagementRate": 0.024
+        },
+        {
+          "name": "YouTube",
+          "share": 10,
+          "followers": 10000,
+          "engagementRate": 0.019
+        }
+      ],
+      "topPosts": [
+        {
+          "title": "Glow Serum Ritual",
+          "type": "Reel",
+          "impressions": 78200,
+          "engagement": 11600,
+          "cta": "Shop the Set",
+          "accent": "from-amber-200/40 to-pink-200/40"
+        },
+        {
+          "title": "Derm Lab Live",
+          "type": "Live",
+          "impressions": 62400,
+          "engagement": 9320,
+          "cta": "Join Live",
+          "accent": "from-cyan-200/40 to-indigo-200/40"
+        },
+        {
+          "title": "Before and After",
+          "type": "Carousel",
+          "impressions": 59800,
+          "engagement": 8880,
+          "cta": "See Results",
+          "accent": "from-emerald-200/40 to-sky-200/40"
+        },
+        {
+          "title": "Night Repair",
+          "type": "Post",
+          "impressions": 54300,
+          "engagement": 7640,
+          "cta": "Add to Routine",
+          "accent": "from-fuchsia-200/40 to-rose-200/40"
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "Hydra Renewal",
+          "status": "Active",
+          "spend": 24000,
+          "roi": 5.9,
+          "goal": "Revenue"
+        },
+        {
+          "name": "Influencer Glow",
+          "status": "Active",
+          "spend": 18200,
+          "roi": 4.8,
+          "goal": "Awareness"
+        },
+        {
+          "name": "Membership Boost",
+          "status": "Active",
+          "spend": 13600,
+          "roi": 4.2,
+          "goal": "Retention"
+        },
+        {
+          "name": "Derm Week",
+          "status": "Paused",
+          "spend": 9200,
+          "roi": 3.6,
+          "goal": "Education"
+        }
+      ],
+      "audience": [
+        {
+          "label": "Skincare enthusiasts",
+          "value": 48
+        },
+        {
+          "label": "Professional women",
+          "value": 32
+        },
+        {
+          "label": "Wellness seekers",
+          "value": 20
+        }
+      ],
+      "cadence": {
+        "weeklyPosts": 52,
+        "bestTime": "Tue - 7:00 PM",
+        "hashtags": [
+          "glowroutine",
+          "dermapproved",
+          "nightrepair",
+          "novaskin"
+        ]
+      },
+      "budget": {
+        "pacing": 78,
+        "nextOptimization": "Expand influencer content to top US metros"
+      },
+      "deltas": {
+        "impressions": "+15%",
+        "engagement": "+12%",
+        "clicks": "+9%",
+        "spend": "On target",
+        "revenue": "+16%"
+      }
+    },
+    {
+      "id": "northbeam-saaS",
+      "name": "Northbeam Cloud",
+      "industry": "B2B SaaS",
+      "tier": "Scale",
+      "region": "EMEA",
+      "status": "Active",
+      "manager": "Dylan Brooks",
+      "tags": [
+        "SaaS",
+        "B2B",
+        "Enterprise"
+      ],
+      "summary": {
+        "followers": 68200,
+        "engagementRate": 0.018,
+        "monthlyReach": 920000,
+        "adSpend": 38400,
+        "roas": 6.4
+      },
+      "trend": [
+        38,
+        40,
+        41,
+        42,
+        44,
+        43,
+        45,
+        46,
+        48,
+        49,
+        51,
+        52,
+        54,
+        55,
+        56,
+        58,
+        59,
+        60,
+        62,
+        63
+      ],
+      "performance": [
+        {
+          "date": "2025-12-01",
+          "impressions": 84200,
+          "engagement": 2120,
+          "clicks": 1620,
+          "spend": 2400,
+          "revenue": 18640
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 86700,
+          "engagement": 2210,
+          "clicks": 1710,
+          "spend": 2500,
+          "revenue": 19280
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 88800,
+          "engagement": 2290,
+          "clicks": 1760,
+          "spend": 2560,
+          "revenue": 19820
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 82800,
+          "engagement": 2060,
+          "clicks": 1580,
+          "spend": 2360,
+          "revenue": 18140
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 90500,
+          "engagement": 2360,
+          "clicks": 1820,
+          "spend": 2620,
+          "revenue": 20260
+        },
+        {
+          "date": "2025-12-06",
+          "impressions": 92200,
+          "engagement": 2400,
+          "clicks": 1880,
+          "spend": 2680,
+          "revenue": 20890
+        },
+        {
+          "date": "2025-12-07",
+          "impressions": 89400,
+          "engagement": 2320,
+          "clicks": 1800,
+          "spend": 2600,
+          "revenue": 20110
+        },
+        {
+          "date": "2025-12-08",
+          "impressions": 93600,
+          "engagement": 2460,
+          "clicks": 1920,
+          "spend": 2740,
+          "revenue": 21420
+        },
+        {
+          "date": "2025-12-09",
+          "impressions": 95000,
+          "engagement": 2510,
+          "clicks": 1960,
+          "spend": 2800,
+          "revenue": 21960
+        },
+        {
+          "date": "2025-12-10",
+          "impressions": 96800,
+          "engagement": 2580,
+          "clicks": 2010,
+          "spend": 2860,
+          "revenue": 22480
+        },
+        {
+          "date": "2025-12-11",
+          "impressions": 93400,
+          "engagement": 2440,
+          "clicks": 1900,
+          "spend": 2740,
+          "revenue": 21340
+        },
+        {
+          "date": "2025-12-12",
+          "impressions": 98200,
+          "engagement": 2640,
+          "clicks": 2060,
+          "spend": 2920,
+          "revenue": 23120
+        },
+        {
+          "date": "2025-12-13",
+          "impressions": 99600,
+          "engagement": 2680,
+          "clicks": 2100,
+          "spend": 2980,
+          "revenue": 23640
+        },
+        {
+          "date": "2025-12-14",
+          "impressions": 101800,
+          "engagement": 2740,
+          "clicks": 2160,
+          "spend": 3060,
+          "revenue": 24210
+        }
+      ],
+      "channels": [
+        {
+          "name": "LinkedIn",
+          "share": 44,
+          "followers": 36200,
+          "engagementRate": 0.021
+        },
+        {
+          "name": "Meta Ads",
+          "share": 22,
+          "followers": 12400,
+          "engagementRate": 0.016
+        },
+        {
+          "name": "X",
+          "share": 18,
+          "followers": 11200,
+          "engagementRate": 0.014
+        },
+        {
+          "name": "YouTube",
+          "share": 16,
+          "followers": 8400,
+          "engagementRate": 0.013
+        }
+      ],
+      "topPosts": [
+        {
+          "title": "2026 Cloud Forecast",
+          "type": "Report",
+          "impressions": 31800,
+          "engagement": 2840,
+          "cta": "Download",
+          "accent": "from-slate-200/60 to-sky-200/40"
+        },
+        {
+          "title": "CTO Roundtable",
+          "type": "Live",
+          "impressions": 29600,
+          "engagement": 2580,
+          "cta": "Reserve Seat",
+          "accent": "from-cyan-200/40 to-blue-200/40"
+        },
+        {
+          "title": "Product Deep Dive",
+          "type": "Video",
+          "impressions": 26200,
+          "engagement": 2240,
+          "cta": "Watch Now",
+          "accent": "from-emerald-200/40 to-lime-200/40"
+        },
+        {
+          "title": "Security Brief",
+          "type": "Post",
+          "impressions": 24400,
+          "engagement": 1980,
+          "cta": "Read More",
+          "accent": "from-indigo-200/40 to-violet-200/40"
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "Enterprise Pipeline",
+          "status": "Active",
+          "spend": 11200,
+          "roi": 7.1,
+          "goal": "Leads"
+        },
+        {
+          "name": "Partner Webinar",
+          "status": "Active",
+          "spend": 7600,
+          "roi": 6.2,
+          "goal": "Registrations"
+        },
+        {
+          "name": "CSAT Stories",
+          "status": "Paused",
+          "spend": 4200,
+          "roi": 4.9,
+          "goal": "Advocacy"
+        },
+        {
+          "name": "Global Summit",
+          "status": "Active",
+          "spend": 14800,
+          "roi": 6.8,
+          "goal": "Awareness"
+        }
+      ],
+      "audience": [
+        {
+          "label": "IT directors",
+          "value": 40
+        },
+        {
+          "label": "Operations leaders",
+          "value": 34
+        },
+        {
+          "label": "Security teams",
+          "value": 26
+        }
+      ],
+      "cadence": {
+        "weeklyPosts": 28,
+        "bestTime": "Mon - 9:00 AM",
+        "hashtags": [
+          "cloudstack",
+          "b2bmarketing",
+          "cisoinsights",
+          "northbeam"
+        ]
+      },
+      "budget": {
+        "pacing": 69,
+        "nextOptimization": "Retarget webinar viewers with case studies"
+      },
+      "deltas": {
+        "impressions": "+6%",
+        "engagement": "+5%",
+        "clicks": "+4%",
+        "spend": "On target",
+        "revenue": "+8%"
+      }
+    },
+    {
+      "id": "pulse-athletics",
+      "name": "Pulse Athletics",
+      "industry": "Fitness",
+      "tier": "Growth",
+      "region": "North America",
+      "status": "Active",
+      "manager": "Jose Alvarez",
+      "tags": [
+        "Fitness",
+        "Community",
+        "Retail"
+      ],
+      "summary": {
+        "followers": 75800,
+        "engagementRate": 0.037,
+        "monthlyReach": 1082000,
+        "adSpend": 28600,
+        "roas": 4.3
+      },
+      "trend": [
+        41,
+        44,
+        46,
+        45,
+        47,
+        50,
+        49,
+        52,
+        54,
+        53,
+        55,
+        58,
+        60,
+        62,
+        61,
+        63,
+        66,
+        68,
+        69,
+        71
+      ],
+      "performance": [
+        {
+          "date": "2025-12-01",
+          "impressions": 98200,
+          "engagement": 4960,
+          "clicks": 1860,
+          "spend": 1980,
+          "revenue": 9180
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 100300,
+          "engagement": 5080,
+          "clicks": 1910,
+          "spend": 2060,
+          "revenue": 9560
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 102100,
+          "engagement": 5160,
+          "clicks": 1970,
+          "spend": 2140,
+          "revenue": 9880
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 96800,
+          "engagement": 4880,
+          "clicks": 1820,
+          "spend": 1940,
+          "revenue": 9040
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 104900,
+          "engagement": 5280,
+          "clicks": 2020,
+          "spend": 2200,
+          "revenue": 10120
+        },
+        {
+          "date": "2025-12-06",
+          "impressions": 106400,
+          "engagement": 5360,
+          "clicks": 2060,
+          "spend": 2260,
+          "revenue": 10340
+        },
+        {
+          "date": "2025-12-07",
+          "impressions": 103200,
+          "engagement": 5200,
+          "clicks": 2000,
+          "spend": 2160,
+          "revenue": 9960
+        },
+        {
+          "date": "2025-12-08",
+          "impressions": 108600,
+          "engagement": 5480,
+          "clicks": 2120,
+          "spend": 2340,
+          "revenue": 10680
+        },
+        {
+          "date": "2025-12-09",
+          "impressions": 110100,
+          "engagement": 5560,
+          "clicks": 2160,
+          "spend": 2400,
+          "revenue": 10940
+        },
+        {
+          "date": "2025-12-10",
+          "impressions": 111800,
+          "engagement": 5640,
+          "clicks": 2200,
+          "spend": 2460,
+          "revenue": 11210
+        },
+        {
+          "date": "2025-12-11",
+          "impressions": 107600,
+          "engagement": 5400,
+          "clicks": 2080,
+          "spend": 2320,
+          "revenue": 10480
+        },
+        {
+          "date": "2025-12-12",
+          "impressions": 113900,
+          "engagement": 5720,
+          "clicks": 2260,
+          "spend": 2520,
+          "revenue": 11560
+        },
+        {
+          "date": "2025-12-13",
+          "impressions": 115400,
+          "engagement": 5800,
+          "clicks": 2300,
+          "spend": 2580,
+          "revenue": 11840
+        },
+        {
+          "date": "2025-12-14",
+          "impressions": 117200,
+          "engagement": 5900,
+          "clicks": 2360,
+          "spend": 2660,
+          "revenue": 12180
+        }
+      ],
+      "channels": [
+        {
+          "name": "Instagram",
+          "share": 36,
+          "followers": 36200,
+          "engagementRate": 0.039
+        },
+        {
+          "name": "TikTok",
+          "share": 29,
+          "followers": 24800,
+          "engagementRate": 0.047
+        },
+        {
+          "name": "Meta Ads",
+          "share": 21,
+          "followers": 9800,
+          "engagementRate": 0.026
+        },
+        {
+          "name": "YouTube",
+          "share": 14,
+          "followers": 6000,
+          "engagementRate": 0.021
+        }
+      ],
+      "topPosts": [
+        {
+          "title": "Studio Launch Week",
+          "type": "Reel",
+          "impressions": 36800,
+          "engagement": 5140,
+          "cta": "Book Class",
+          "accent": "from-emerald-200/40 to-cyan-200/40"
+        },
+        {
+          "title": "Coach Spotlight",
+          "type": "Story",
+          "impressions": 29800,
+          "engagement": 3960,
+          "cta": "Meet the Team",
+          "accent": "from-orange-200/40 to-rose-200/40"
+        },
+        {
+          "title": "Recovery Series",
+          "type": "Carousel",
+          "impressions": 27400,
+          "engagement": 3440,
+          "cta": "Save Series",
+          "accent": "from-sky-200/40 to-indigo-200/40"
+        },
+        {
+          "title": "Member Wins",
+          "type": "Post",
+          "impressions": 24800,
+          "engagement": 3120,
+          "cta": "Celebrate",
+          "accent": "from-lime-200/40 to-amber-200/40"
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "New Year Reset",
+          "status": "Active",
+          "spend": 6800,
+          "roi": 4.9,
+          "goal": "Signups"
+        },
+        {
+          "name": "Corporate Wellness",
+          "status": "Active",
+          "spend": 5200,
+          "roi": 4.1,
+          "goal": "Leads"
+        },
+        {
+          "name": "Referral Sprint",
+          "status": "Paused",
+          "spend": 2800,
+          "roi": 3.4,
+          "goal": "Referrals"
+        },
+        {
+          "name": "Outdoor Bootcamp",
+          "status": "Active",
+          "spend": 7400,
+          "roi": 4.6,
+          "goal": "Bookings"
+        }
+      ],
+      "audience": [
+        {
+          "label": "Young professionals",
+          "value": 44
+        },
+        {
+          "label": "Athletic parents",
+          "value": 31
+        },
+        {
+          "label": "Student athletes",
+          "value": 25
+        }
+      ],
+      "cadence": {
+        "weeklyPosts": 44,
+        "bestTime": "Fri - 5:30 PM",
+        "hashtags": [
+          "sweatcollective",
+          "pulsefit",
+          "strengthsessions",
+          "memberwins"
+        ]
+      },
+      "budget": {
+        "pacing": 74,
+        "nextOptimization": "Increase spend on conversion-focused reels"
+      },
+      "deltas": {
+        "impressions": "+10%",
+        "engagement": "+9%",
+        "clicks": "+7%",
+        "spend": "On target",
+        "revenue": "+11%"
+      }
+    },
+    {
+      "id": "harbor-real-estate",
+      "name": "Harbor Real Estate",
+      "industry": "Real Estate",
+      "tier": "Scale",
+      "region": "Midwest",
+      "status": "Active",
+      "manager": "Noah Kim",
+      "tags": [
+        "Luxury",
+        "Local",
+        "Residential"
+      ],
+      "summary": {
+        "followers": 31800,
+        "engagementRate": 0.022,
+        "monthlyReach": 420000,
+        "adSpend": 21800,
+        "roas": 5.4
+      },
+      "trend": [
+        28,
+        29,
+        30,
+        32,
+        31,
+        33,
+        34,
+        36,
+        37,
+        36,
+        38,
+        40,
+        41,
+        43,
+        42,
+        44,
+        46,
+        47,
+        48,
+        50
+      ],
+      "performance": [
+        {
+          "date": "2025-12-01",
+          "impressions": 48600,
+          "engagement": 1420,
+          "clicks": 920,
+          "spend": 1560,
+          "revenue": 8400
+        },
+        {
+          "date": "2025-12-02",
+          "impressions": 50200,
+          "engagement": 1480,
+          "clicks": 960,
+          "spend": 1620,
+          "revenue": 8720
+        },
+        {
+          "date": "2025-12-03",
+          "impressions": 51800,
+          "engagement": 1520,
+          "clicks": 990,
+          "spend": 1680,
+          "revenue": 9020
+        },
+        {
+          "date": "2025-12-04",
+          "impressions": 47100,
+          "engagement": 1380,
+          "clicks": 900,
+          "spend": 1500,
+          "revenue": 8160
+        },
+        {
+          "date": "2025-12-05",
+          "impressions": 53400,
+          "engagement": 1580,
+          "clicks": 1030,
+          "spend": 1740,
+          "revenue": 9280
+        },
+        {
+          "date": "2025-12-06",
+          "impressions": 54800,
+          "engagement": 1640,
+          "clicks": 1060,
+          "spend": 1800,
+          "revenue": 9560
+        },
+        {
+          "date": "2025-12-07",
+          "impressions": 52100,
+          "engagement": 1540,
+          "clicks": 1010,
+          "spend": 1700,
+          "revenue": 9140
+        },
+        {
+          "date": "2025-12-08",
+          "impressions": 56200,
+          "engagement": 1720,
+          "clicks": 1100,
+          "spend": 1860,
+          "revenue": 9820
+        },
+        {
+          "date": "2025-12-09",
+          "impressions": 57800,
+          "engagement": 1780,
+          "clicks": 1140,
+          "spend": 1920,
+          "revenue": 10140
+        },
+        {
+          "date": "2025-12-10",
+          "impressions": 59200,
+          "engagement": 1830,
+          "clicks": 1180,
+          "spend": 1980,
+          "revenue": 10420
+        },
+        {
+          "date": "2025-12-11",
+          "impressions": 55200,
+          "engagement": 1680,
+          "clicks": 1080,
+          "spend": 1840,
+          "revenue": 9740
+        },
+        {
+          "date": "2025-12-12",
+          "impressions": 60800,
+          "engagement": 1880,
+          "clicks": 1220,
+          "spend": 2040,
+          "revenue": 10780
+        },
+        {
+          "date": "2025-12-13",
+          "impressions": 62400,
+          "engagement": 1920,
+          "clicks": 1260,
+          "spend": 2100,
+          "revenue": 11100
+        },
+        {
+          "date": "2025-12-14",
+          "impressions": 64100,
+          "engagement": 1980,
+          "clicks": 1300,
+          "spend": 2160,
+          "revenue": 11420
+        }
+      ],
+      "channels": [
+        {
+          "name": "Instagram",
+          "share": 34,
+          "followers": 14200,
+          "engagementRate": 0.023
+        },
+        {
+          "name": "Meta Ads",
+          "share": 26,
+          "followers": 8400,
+          "engagementRate": 0.019
+        },
+        {
+          "name": "LinkedIn",
+          "share": 22,
+          "followers": 5600,
+          "engagementRate": 0.017
+        },
+        {
+          "name": "Pinterest",
+          "share": 18,
+          "followers": 3600,
+          "engagementRate": 0.021
+        }
+      ],
+      "topPosts": [
+        {
+          "title": "Lakeside Listing",
+          "type": "Carousel",
+          "impressions": 18200,
+          "engagement": 2140,
+          "cta": "View Home",
+          "accent": "from-sky-200/40 to-emerald-200/40"
+        },
+        {
+          "title": "Neighborhood Guide",
+          "type": "Post",
+          "impressions": 16400,
+          "engagement": 1880,
+          "cta": "Explore",
+          "accent": "from-amber-200/40 to-orange-200/40"
+        },
+        {
+          "title": "Client Walkthrough",
+          "type": "Video",
+          "impressions": 15200,
+          "engagement": 1720,
+          "cta": "Watch Tour",
+          "accent": "from-cyan-200/40 to-indigo-200/40"
+        },
+        {
+          "title": "Market Pulse",
+          "type": "Story",
+          "impressions": 13800,
+          "engagement": 1560,
+          "cta": "Get Insights",
+          "accent": "from-rose-200/40 to-fuchsia-200/40"
+        }
+      ],
+      "campaigns": [
+        {
+          "name": "Luxury Open House",
+          "status": "Active",
+          "spend": 6400,
+          "roi": 5.7,
+          "goal": "Leads"
+        },
+        {
+          "name": "Relocation Series",
+          "status": "Active",
+          "spend": 5200,
+          "roi": 4.8,
+          "goal": "Awareness"
+        },
+        {
+          "name": "First-Time Buyers",
+          "status": "Paused",
+          "spend": 3400,
+          "roi": 3.9,
+          "goal": "Education"
+        },
+        {
+          "name": "Weekend Tours",
+          "status": "Active",
+          "spend": 6800,
+          "roi": 5.2,
+          "goal": "Tours"
+        }
+      ],
+      "audience": [
+        {
+          "label": "Luxury buyers",
+          "value": 38
+        },
+        {
+          "label": "Growing families",
+          "value": 34
+        },
+        {
+          "label": "Remote relocations",
+          "value": 28
+        }
+      ],
+      "cadence": {
+        "weeklyPosts": 32,
+        "bestTime": "Sat - 11:00 AM",
+        "hashtags": [
+          "harborhomes",
+          "luxuryliving",
+          "openhouse",
+          "neighborhoodguide"
+        ]
+      },
+      "budget": {
+        "pacing": 67,
+        "nextOptimization": "Highlight video tours for waterfront listings"
+      },
+      "deltas": {
+        "impressions": "+7%",
+        "engagement": "+6%",
+        "clicks": "+5%",
+        "spend": "On target",
+        "revenue": "+9%"
+      }
+    }
+  ]
+}

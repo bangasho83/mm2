@@ -1,0 +1,83 @@
+{
+  "header": {
+    "title": "Social Media Dashboard",
+    "subtitle": "Social Media Dashboard"
+  },
+  "stats": [
+    { "label": "Facebook Followers", "value": 36916 },
+    { "label": "Facebook Posts", "value": 9 },
+    { "label": "Instagram Followers", "value": 24772 },
+    { "label": "Instagram Posts", "value": 9 }
+  ],
+  "calendar": {
+    "monthLabel": "December 2025",
+    "weeks": [
+      { "days": [
+        { "date": "30", "month": "Nov", "icons": [] },
+        { "date": "1", "month": "Dec", "icons": [] },
+        { "date": "2", "month": "Dec", "icons": [] },
+        { "date": "3", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "4", "month": "Dec", "icons": [] },
+        { "date": "5", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "6", "month": "Dec", "icons": ["facebook", "instagram"] }
+      ]},
+      { "days": [
+        { "date": "7", "month": "Dec", "icons": [] },
+        { "date": "8", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "9", "month": "Dec", "icons": [] },
+        { "date": "10", "month": "Dec", "icons": [] },
+        { "date": "11", "month": "Dec", "icons": [] },
+        { "date": "12", "month": "Dec", "icons": [] },
+        { "date": "13", "month": "Dec", "icons": ["facebook", "instagram"] }
+      ]},
+      { "days": [
+        { "date": "14", "month": "Dec", "icons": [] },
+        { "date": "15", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "16", "month": "Dec", "icons": [] },
+        { "date": "17", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "18", "month": "Dec", "icons": [] },
+        { "date": "19", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "20", "month": "Dec", "icons": [] }
+      ]},
+      { "days": [
+        { "date": "21", "month": "Dec", "icons": [] },
+        { "date": "22", "month": "Dec", "icons": ["facebook", "instagram"] },
+        { "date": "23", "month": "Dec", "icons": [] },
+        { "date": "24", "month": "Dec", "icons": [] },
+        { "date": "25", "month": "Dec", "icons": [] },
+        { "date": "26", "month": "Dec", "icons": [] },
+        { "date": "27", "month": "Dec", "icons": [] }
+      ]}
+    ]
+  },
+  "facebook": {
+    "title": "Facebook Page",
+    "cta": "Visit Facebook Page",
+    "posts": [
+      { "date": "Dec 22, 2025, 07:10 AM", "title": "Fuel your day with the rich, buttery goodness of Amaltaas Pecan Nuts!", "type": "POST" },
+      { "date": "Dec 19, 2025, 07:47 AM", "title": "Winter comfort at its finest - Sarson ka Saag by Amaltaas!", "type": "POST" },
+      { "date": "Dec 17, 2025, 07:09 AM", "title": "Celebrate Christmas & the New Year with Amaltaas!", "type": "POST" },
+      { "date": "Dec 15, 2025, 07:51 AM", "title": "Fresh, wholesome, and full of vibrant flavors - our Whole Wheat Pasta Salad", "type": "POST" },
+      { "date": "Dec 13, 2025, 07:34 AM", "title": "A smooth, creamy favorite - Amaltaas Hummus made fresh with premium ingredients", "type": "POST" },
+      { "date": "Dec 08, 2025, 07:01 AM", "title": "Freshness you can trust - every single day! Amaltaas brings premium-quality groceries", "type": "POST" },
+      { "date": "Dec 06, 2025, 08:54 AM", "title": "Fresh, wholesome, and packed with bold Mediterranean flavor - our Signature Falafel Wrap", "type": "POST" },
+      { "date": "Dec 05, 2025, 05:10 AM", "title": "All the sweetness you love, wrapped in one perfect bundle - From Signature Honey", "type": "POST" },
+      { "date": "Dec 03, 2025, 09:03 AM", "title": "Warm, nourishing, and made with real desi ingredients - Amaltaas Desi Chicken Broth", "type": "POST" }
+    ]
+  },
+  "instagram": {
+    "title": "Instagram Profile",
+    "cta": "Visit Instagram Profile",
+    "posts": [
+      { "date": "Dec 22, 2025, 07:09 AM", "title": "Fuel your day with the rich, buttery goodness of Amaltaas Pecan Nuts!", "type": "Video" },
+      { "date": "Dec 19, 2025, 07:47 AM", "title": "Winter comfort at its finest - Sarson ka Saag by Amaltaas!", "type": "Video" },
+      { "date": "Dec 17, 2025, 07:03 AM", "title": "Celebrate Christmas & the New Year with Amaltaas!", "type": "Video" },
+      { "date": "Dec 15, 2025, 07:51 AM", "title": "Fresh, wholesome, and full of vibrant flavors - our Whole Wheat Pasta Salad", "type": "Photo" },
+      { "date": "Dec 13, 2025, 07:34 AM", "title": "A smooth, creamy favorite - Amaltaas Hummus made fresh with premium ingredients", "type": "Photo" },
+      { "date": "Dec 08, 2025, 07:01 AM", "title": "Freshness you can trust - every single day! Amaltaas brings premium-quality groceries", "type": "Photo" },
+      { "date": "Dec 06, 2025, 08:54 AM", "title": "Fresh, wholesome, and packed with bold Mediterranean flavor - our Signature Falafel Wrap", "type": "Photo" },
+      { "date": "Dec 05, 2025, 05:10 AM", "title": "All the sweetness you love, wrapped in one perfect bundle - From Signature Honey", "type": "Photo" },
+      { "date": "Dec 03, 2025, 09:03 AM", "title": "Warm, nourishing, and made with real desi ingredients - Amaltaas Desi Chicken Broth", "type": "Video" }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "header": {
+    "title": "Meta Ads",
+    "brand": "Amaltaas",
+    "website": "https://amaltaas.com.pk"
+  },
+  "summary": [
+    { "label": "Amount Spent", "value": 58428.38, "delta": "+12% vs last week" },
+    { "label": "CTR", "value": 0.022, "delta": "+0.3% vs last week" },
+    { "label": "CPC", "value": 25.98, "delta": "-4% vs last week" },
+    { "label": "ROAS", "value": 3.6, "delta": "+0.4 vs last week" }
+  ],
+  "alert": "Sales up 15% with 5% increase in engagement",
+  "dailyTrends": [
+    { "date": "Dec 1", "spend": 2200, "ctr": 2.1, "cpc": 24.4 },
+    { "date": "Dec 3", "spend": 2100, "ctr": 2.0, "cpc": 25.1 },
+    { "date": "Dec 5", "spend": 2600, "ctr": 2.4, "cpc": 23.6 },
+    { "date": "Dec 7", "spend": 1800, "ctr": 1.9, "cpc": 27.2 },
+    { "date": "Dec 9", "spend": 2400, "ctr": 2.3, "cpc": 24.9 },
+    { "date": "Dec 11", "spend": 2800, "ctr": 2.5, "cpc": 23.3 },
+    { "date": "Dec 13", "spend": 2600, "ctr": 2.4, "cpc": 23.8 },
+    { "date": "Dec 15", "spend": 3000, "ctr": 2.6, "cpc": 22.9 }
+  ],
+  "campaigns": [
+    {
+      "name": "Amaltaas | Milk | Conversion | Lahore | 5-14-25",
+      "status": "Active",
+      "metrics": {
+        "reach": 20482,
+        "ctr": 0.0203,
+        "cpc": 436.15,
+        "roas": 21.52
+      },
+      "creative": [
+        { "title": "Milk Pack - A", "spend": 1200, "ctr": 2.3, "cpc": 24.6, "roas": 2.8 },
+        { "title": "Milk Pack - B", "spend": 980, "ctr": 2.0, "cpc": 25.3, "roas": 2.6 }
+      ]
+    },
+    {
+      "name": "Amaltaas | Desi Category | Conversion | 11-5-25",
+      "status": "Active",
+      "metrics": {
+        "reach": 16920,
+        "ctr": 0.0218,
+        "cpc": 543.88,
+        "roas": 25.18
+      },
+      "creative": [
+        { "title": "Desi Category - A", "spend": 1100, "ctr": 2.2, "cpc": 23.9, "roas": 3.0 },
+        { "title": "Desi Category - B", "spend": 930, "ctr": 2.0, "cpc": 24.8, "roas": 2.7 }
+      ]
+    },
+    {
+      "name": "Amaltaas | Grocery | Conversion | Lahore | 9-6-25",
+      "status": "Active",
+      "metrics": {
+        "reach": 16325,
+        "ctr": 0.023, "cpc": 895.78, "roas": 38.96
+      },
+      "creative": [
+        { "title": "Grocery Pack - A", "spend": 980, "ctr": 2.4, "cpc": 22.8, "roas": 3.4 },
+        { "title": "Grocery Pack - B", "spend": 860, "ctr": 2.1, "cpc": 24.1, "roas": 3.0 }
+      ]
+    },
+    {
+      "name": "Amaltaas | Desi Ghee & Milk | Conversion | 19-27-25",
+      "status": "Active",
+      "metrics": {
+        "reach": 2098,
+        "ctr": 0.0162,
+        "cpc": 1002.42,
+        "roas": 61.71
+      },
+      "creative": [
+        { "title": "Ghee & Milk - A", "spend": 680, "ctr": 1.6, "cpc": 26.8, "roas": 3.1 },
+        { "title": "Ghee & Milk - B", "spend": 720, "ctr": 1.7, "cpc": 26.2, "roas": 3.2 }
+      ]
+    }
+  ],
+  "radar": [
+    { "metric": "Reach", "campaignA": 80, "campaignB": 65, "campaignC": 60 },
+    { "metric": "CTR", "campaignA": 70, "campaignB": 75, "campaignC": 62 },
+    { "metric": "CPC", "campaignA": 55, "campaignB": 60, "campaignC": 58 },
+    { "metric": "ROAS", "campaignA": 85, "campaignB": 72, "campaignC": 68 },
+    { "metric": "Spend", "campaignA": 60, "campaignB": 58, "campaignC": 52 }
+  ]
+}

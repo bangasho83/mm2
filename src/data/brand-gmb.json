@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Google Places",
+    "subtitle": "Manage your Google My Business locations for Amaltaas"
+  },
+  "summary": [
+    { "label": "Total Locations", "value": 2 },
+    { "label": "Average Rating", "value": 3.9 },
+    { "label": "Total Reviews", "value": 101 }
+  ],
+  "locations": [
+    {
+      "name": "Amaltaas",
+      "address": "Shop No 12, PAF Market, Cantt, Lahore, 54000, Pakistan",
+      "phone": "(042) 37192997",
+      "website": "Website",
+      "updated": "Updated 2025-06-12",
+      "rating": 4.1,
+      "reviews": 10
+    },
+    {
+      "name": "Amaltaas store",
+      "address": "109, DHA Phase 4 DD commercial area Sector CCA Dha Phase 4, Lahore, Pakistan",
+      "phone": "(042) 35708277",
+      "website": "Website",
+      "updated": "Updated 2025-06-12",
+      "rating": 3.7,
+      "reviews": 91
+    }
+  ]
+}

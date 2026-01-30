@@ -1,0 +1,80 @@
+{
+  "header": {
+    "title": "Workspace",
+    "subtitle": "Agency-wide production plan and performance overview"
+  },
+  "summary": [
+    { "label": "Active Brands", "value": "8", "delta": "+2 this quarter" },
+    { "label": "Tasks Due This Week", "value": "42", "delta": "85% on track" },
+    { "label": "Content Scheduled", "value": "128", "delta": "+12 vs last month" },
+    { "label": "On-time Delivery", "value": "92%", "delta": "+4% MoM" }
+  ],
+  "monthlyPlan": [
+    { "label": "Social Posts", "target": 120, "planned": 98, "completed": 64 },
+    { "label": "Reels / Shorts", "target": 40, "planned": 32, "completed": 18 },
+    { "label": "Blog Articles", "target": 24, "planned": 21, "completed": 9 },
+    { "label": "Email Campaigns", "target": 16, "planned": 12, "completed": 6 },
+    { "label": "Ad Creative Sets", "target": 28, "planned": 20, "completed": 11 },
+    { "label": "Landing Pages", "target": 8, "planned": 6, "completed": 3 }
+  ],
+  "brandWorkstreams": [
+    {
+      "brand": "Amaltaas",
+      "focus": "Holiday bundles & referral push",
+      "owner": "Maya Patel",
+      "nextDeliverable": "3 social posts + 1 blog",
+      "status": "On Track",
+      "pace": "88%"
+    },
+    {
+      "brand": "Aurora Bikes",
+      "focus": "Winter trail campaign",
+      "owner": "Ari Kaplan",
+      "nextDeliverable": "4 reels + 2 ads",
+      "status": "At Risk",
+      "pace": "62%"
+    },
+    {
+      "brand": "BNU",
+      "focus": "Admissions awareness sprint",
+      "owner": "Hira Khan",
+      "nextDeliverable": "Email series + landing page",
+      "status": "On Track",
+      "pace": "76%"
+    },
+    {
+      "brand": "Baba Bakers",
+      "focus": "Weekend preorder focus",
+      "owner": "Ali Raza",
+      "nextDeliverable": "5 social posts",
+      "status": "Ahead",
+      "pace": "110%"
+    }
+  ],
+  "priorities": [
+    {
+      "title": "Finalize January content calendar",
+      "brand": "Amaltaas",
+      "due": "Jan 31",
+      "type": "Planning"
+    },
+    {
+      "title": "Deliver 3 product reels",
+      "brand": "Aurora Bikes",
+      "due": "Feb 2",
+      "type": "Production"
+    },
+    {
+      "title": "Publish winter sale landing page",
+      "brand": "BNU",
+      "due": "Feb 3",
+      "type": "Launch"
+    },
+    {
+      "title": "Send weekly email digest",
+      "brand": "Baba Bakers",
+      "due": "Feb 1",
+      "type": "Email"
+    }
+  ]
+}

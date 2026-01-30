@@ -1,0 +1,1440 @@
+{
+  "clients": {
+    "aurora-bikes": {
+      "overview": {
+        "visitors": 12014,
+        "organicSearch": 3083,
+        "adSpend": 256450,
+        "revenue": 957598,
+        "ctr": 0.02
+      },
+      "trafficSources": [
+        {
+          "label": "Paid Social",
+          "share": 33,
+          "value": 5262,
+          "delta": "+13%"
+        },
+        {
+          "label": "Organic Search",
+          "share": 26,
+          "value": 3083,
+          "delta": "+9%"
+        },
+        {
+          "label": "Direct",
+          "share": 21,
+          "value": 1540,
+          "delta": "+6%"
+        },
+        {
+          "label": "Organic Social",
+          "share": 14,
+          "value": 1070,
+          "delta": "+4%"
+        },
+        {
+          "label": "Referral",
+          "share": 5,
+          "value": 285,
+          "delta": "-2%"
+        }
+      ],
+      "metaAds": {
+        "spend": 256450,
+        "impressions": 624158,
+        "clicks": 14423,
+        "reach": 451119,
+        "ctr": 0.02,
+        "cpc": 17.78,
+        "cpm": 410.87
+      },
+      "metaCampaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 70868,
+          "results": 23205,
+          "type": "Sales"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 56304,
+          "results": 20489,
+          "type": "Sales"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 65425,
+          "results": 7554,
+          "type": "Lead"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 79312,
+          "results": 15816,
+          "type": "App Promo"
+        }
+      ],
+      "sales": {
+        "transactions": 291,
+        "avgOrderValue": 3291,
+        "topProducts": [
+          {
+            "name": "Amaltaas Buffalo Milk",
+            "revenue": 44550
+          },
+          {
+            "name": "Amaltaas Cow Milk",
+            "revenue": 38000
+          },
+          {
+            "name": "Amaltaas Desi Chicken Live Weight",
+            "revenue": 19240
+          },
+          {
+            "name": "Amaltaas Fresh Cream",
+            "revenue": 25190
+          }
+        ]
+      },
+      "locations": {
+        "rating": 3.9,
+        "totalRatings": 101,
+        "distribution": [
+          {
+            "label": "5 star",
+            "value": 62
+          },
+          {
+            "label": "4 star",
+            "value": 24
+          },
+          {
+            "label": "3 star",
+            "value": 8
+          },
+          {
+            "label": "2 star",
+            "value": 4
+          },
+          {
+            "label": "1 star",
+            "value": 2
+          }
+        ]
+      },
+      "funnel": [
+        {
+          "label": "Page Views",
+          "value": 30743,
+          "delta": "+5%"
+        },
+        {
+          "label": "Add to Cart",
+          "value": 2583,
+          "delta": "+2%"
+        },
+        {
+          "label": "Purchases",
+          "value": 215,
+          "delta": "-1%"
+        }
+      ],
+      "social": {
+        "facebook": {
+          "posts": 9,
+          "followers": 9617
+        },
+        "instagram": {
+          "posts": 9,
+          "followers": 24737
+        },
+        "recentPosts": [
+          {
+            "title": "Trail Bowl",
+            "accent": "from-amber-200/40 to-orange-200/40"
+          },
+          {
+            "title": "Rider Fuel",
+            "accent": "from-rose-200/40 to-amber-200/40"
+          },
+          {
+            "title": "Urban Sprint",
+            "accent": "from-sky-200/40 to-lime-200/40"
+          },
+          {
+            "title": "Weekend Pack",
+            "accent": "from-fuchsia-200/40 to-amber-200/40"
+          },
+          {
+            "title": "Gravel Flow",
+            "accent": "from-emerald-200/40 to-sky-200/40"
+          },
+          {
+            "title": "Morning Ride",
+            "accent": "from-lime-200/40 to-cyan-200/40"
+          }
+        ]
+      },
+      "starredKeywords": [
+        "Granola Bowl",
+        "Granola Cookies",
+        "Pecan Nuts",
+        "Grocery Range",
+        "Organic Gift Basket",
+        "Ramzan Gift Basket",
+        "Eid Gift Basket",
+        "grocery",
+        "Healthy grocery",
+        "grocery online",
+        "healthy grocery online",
+        "healthy snacks",
+        "Food basket",
+        "organic food basket"
+      ],
+      "trackedPages": [
+        {
+          "title": "Avocados in Lahore - Price, Benefits, and How to Eat",
+          "views": 452,
+          "avgTime": "2:07",
+          "conversions": 34
+        },
+        {
+          "title": "Buy Pure Desi Cow Ghee in Lahore | Best Desi Ghee Online",
+          "views": 328,
+          "avgTime": "1:58",
+          "conversions": 27
+        },
+        {
+          "title": "Buy Fresh Goat Milk in Lahore | Get Goat Milk Delivery",
+          "views": 274,
+          "avgTime": "1:32",
+          "conversions": 18
+        },
+        {
+          "title": "Buy Fresh Buffalo Milk in Lahore | Pure Buffalo Milk Delivery",
+          "views": 216,
+          "avgTime": "1:19",
+          "conversions": 12
+        },
+        {
+          "title": "Amaltaas Desi Ghee: Pure, Authentic, and Rich in Flavor",
+          "views": 198,
+          "avgTime": "1:05",
+          "conversions": 9
+        }
+      ],
+      "backlinks": [
+        {
+          "domain": "Unknown Domain",
+          "url": "https://inpkr.com/post/desi-ghee/health-benefits-of-desi-ghee",
+          "status": "Valid"
+        },
+        {
+          "domain": "Unknown Domain",
+          "url": "https://faceclean.com/read-blog/27892_chicken-yakhni-vs-chicken-broth.html",
+          "status": "Invalid"
+        },
+        {
+          "domain": "Unknown Domain",
+          "url": "https://inpkr.com/post/chicken-yakhni-vs-chicken-broth-for-immunity-why-desi-chicken-yakhni.html",
+          "status": "Invalid"
+        },
+        {
+          "domain": "Unknown Domain",
+          "url": "https://snipetg.com/read-blog/8216_what-is-panjeeri-uses-benefits-amla.html",
+          "status": "Invalid"
+        },
+        {
+          "domain": "Unknown Domain",
+          "url": "https://thedarkchat.com/read-blog/56400_is-panjeeri-healthy-benefits-ingredients.html",
+          "status": "Invalid"
+        }
+      ]
+    },
+    "bloom-cafe": {
+      "overview": {
+        "visitors": 8410,
+        "organicSearch": 2158,
+        "adSpend": 179515,
+        "revenue": 670319,
+        "ctr": 0.02
+      },
+      "trafficSources": [
+        {
+          "label": "Paid Social",
+          "share": 33,
+          "value": 5262,
+          "delta": "+13%"
+        },
+        {
+          "label": "Organic Search",
+          "share": 26,
+          "value": 3083,
+          "delta": "+9%"
+        },
+        {
+          "label": "Direct",
+          "share": 21,
+          "value": 1540,
+          "delta": "+6%"
+        },
+        {
+          "label": "Organic Social",
+          "share": 14,
+          "value": 1070,
+          "delta": "+4%"
+        },
+        {
+          "label": "Referral",
+          "share": 6,
+          "value": 285,
+          "delta": "-2%"
+        }
+      ],
+      "metaAds": {
+        "spend": 179515,
+        "impressions": 436911,
+        "clicks": 10096,
+        "reach": 315783,
+        "ctr": 0.02,
+        "cpc": 16.89,
+        "cpm": 390.33
+      },
+      "metaCampaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 70688,
+          "results": 23205,
+          "type": "Sales"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 56304,
+          "results": 20489,
+          "type": "Sales"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 65425,
+          "results": 7554,
+          "type": "Lead"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 79312,
+          "results": 15816,
+          "type": "App Promo"
+        }
+      ],
+      "sales": {
+        "transactions": 204,
+        "avgOrderValue": 3044,
+        "topProducts": [
+          {
+            "name": "Aurora Buffalo Milk",
+            "revenue": 44550
+          },
+          {
+            "name": "City Commuter Kit",
+            "revenue": 38200
+          },
+          {
+            "name": "Trail Boost Pack",
+            "revenue": 25190
+          },
+          {
+            "name": "Winter Service",
+            "revenue": 19240
+          }
+        ]
+      },
+      "locations": {
+        "rating": 3.75,
+        "totalRatings": 71,
+        "distribution": [
+          {
+            "label": "5 star",
+            "value": 62
+          },
+          {
+            "label": "4 star",
+            "value": 24
+          },
+          {
+            "label": "3 star",
+            "value": 8
+          },
+          {
+            "label": "2 star",
+            "value": 4
+          },
+          {
+            "label": "1 star",
+            "value": 2
+          }
+        ]
+      },
+      "funnel": [
+        {
+          "label": "Page Views",
+          "value": 21520,
+          "delta": "+5%"
+        },
+        {
+          "label": "Add to Cart",
+          "value": 1808,
+          "delta": "+2%"
+        },
+        {
+          "label": "Purchases",
+          "value": 151,
+          "delta": "-1%"
+        }
+      ],
+      "social": {
+        "facebook": {
+          "posts": 7,
+          "followers": 5210
+        },
+        "instagram": {
+          "posts": 11,
+          "followers": 18420
+        },
+        "recentPosts": [
+          {
+            "title": "Latte Lab",
+            "accent": "from-rose-200/40 to-amber-200/40"
+          },
+          {
+            "title": "Brunch Boards",
+            "accent": "from-lime-200/40 to-emerald-200/40"
+          },
+          {
+            "title": "Morning Rituals",
+            "accent": "from-sky-200/40 to-violet-200/40"
+          },
+          {
+            "title": "Holiday Cards",
+            "accent": "from-fuchsia-200/40 to-orange-200/40"
+          },
+          {
+            "title": "Citrus Drop",
+            "accent": "from-amber-200/40 to-rose-200/40"
+          },
+          {
+            "title": "Cozy Corner",
+            "accent": "from-emerald-200/40 to-cyan-200/40"
+          }
+        ]
+      },
+      "starredKeywords": [
+        "brunch boards",
+        "latte art",
+        "local cafe",
+        "seasonal menu",
+        "gift cards"
+      ],
+      "trackedPages": [
+        {
+          "title": "Seasonal menu",
+          "views": 312,
+          "avgTime": "1:42",
+          "conversions": 18
+        },
+        {
+          "title": "Catering inquiry",
+          "views": 214,
+          "avgTime": "1:21",
+          "conversions": 12
+        },
+        {
+          "title": "Gift cards",
+          "views": 187,
+          "avgTime": "1:36",
+          "conversions": 9
+        },
+        {
+          "title": "Book a table",
+          "views": 164,
+          "avgTime": "1:15",
+          "conversions": 7
+        }
+      ],
+      "backlinks": [
+        {
+          "domain": "outdoorpulse.com",
+          "url": "https://outdoorpulse.com/aurora-trail",
+          "status": "Valid"
+        },
+        {
+          "domain": "cyclecity.co",
+          "url": "https://cyclecity.co/best-gravel",
+          "status": "Valid"
+        },
+        {
+          "domain": "urbancommute.org",
+          "url": "https://urbancommute.org/winter-service",
+          "status": "Check"
+        },
+        {
+          "domain": "rideweekly.io",
+          "url": "https://rideweekly.io/aurora-guide",
+          "status": "Valid"
+        }
+      ]
+    },
+    "nova-skincare": {
+      "overview": {
+        "visitors": 19222,
+        "organicSearch": 4933,
+        "adSpend": 410320,
+        "revenue": 1532157,
+        "ctr": 0.03
+      },
+      "trafficSources": [
+        {
+          "label": "Paid Social",
+          "share": 33,
+          "value": 5262,
+          "delta": "+13%"
+        },
+        {
+          "label": "Organic Search",
+          "share": 26,
+          "value": 3083,
+          "delta": "+9%"
+        },
+        {
+          "label": "Direct",
+          "share": 21,
+          "value": 1540,
+          "delta": "+6%"
+        },
+        {
+          "label": "Organic Social",
+          "share": 14,
+          "value": 1070,
+          "delta": "+4%"
+        },
+        {
+          "label": "Referral",
+          "share": 6,
+          "value": 285,
+          "delta": "-2%"
+        }
+      ],
+      "metaAds": {
+        "spend": 410320,
+        "impressions": 998653,
+        "clicks": 23077,
+        "reach": 721790,
+        "ctr": 0.03,
+        "cpc": 19.56,
+        "cpm": 451.96
+      },
+      "metaCampaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 70688,
+          "results": 23205,
+          "type": "Sales"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 56304,
+          "results": 20489,
+          "type": "Sales"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 65425,
+          "results": 7554,
+          "type": "Lead"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 79312,
+          "results": 15816,
+          "type": "App Promo"
+        }
+      ],
+      "sales": {
+        "transactions": 466,
+        "avgOrderValue": 3785,
+        "topProducts": [
+          {
+            "name": "Aurora Buffalo Milk",
+            "revenue": 44550
+          },
+          {
+            "name": "City Commuter Kit",
+            "revenue": 38200
+          },
+          {
+            "name": "Trail Boost Pack",
+            "revenue": 25190
+          },
+          {
+            "name": "Winter Service",
+            "revenue": 19240
+          }
+        ]
+      },
+      "locations": {
+        "rating": 4.19,
+        "totalRatings": 162,
+        "distribution": [
+          {
+            "label": "5 star",
+            "value": 62
+          },
+          {
+            "label": "4 star",
+            "value": 24
+          },
+          {
+            "label": "3 star",
+            "value": 8
+          },
+          {
+            "label": "2 star",
+            "value": 4
+          },
+          {
+            "label": "1 star",
+            "value": 2
+          }
+        ]
+      },
+      "funnel": [
+        {
+          "label": "Page Views",
+          "value": 49189,
+          "delta": "+5%"
+        },
+        {
+          "label": "Add to Cart",
+          "value": 4133,
+          "delta": "+2%"
+        },
+        {
+          "label": "Purchases",
+          "value": 344,
+          "delta": "-1%"
+        }
+      ],
+      "social": {
+        "facebook": {
+          "posts": 6,
+          "followers": 18420
+        },
+        "instagram": {
+          "posts": 12,
+          "followers": 72140
+        },
+        "recentPosts": [
+          {
+            "title": "Glow Serum",
+            "accent": "from-amber-200/40 to-pink-200/40"
+          },
+          {
+            "title": "Derm Lab Live",
+            "accent": "from-cyan-200/40 to-indigo-200/40"
+          },
+          {
+            "title": "Before After",
+            "accent": "from-emerald-200/40 to-sky-200/40"
+          },
+          {
+            "title": "Night Repair",
+            "accent": "from-fuchsia-200/40 to-rose-200/40"
+          },
+          {
+            "title": "SPF Edit",
+            "accent": "from-lime-200/40 to-amber-200/40"
+          },
+          {
+            "title": "Clinic Glow",
+            "accent": "from-sky-200/40 to-violet-200/40"
+          }
+        ]
+      },
+      "starredKeywords": [
+        "glow serum",
+        "derm approved",
+        "night repair",
+        "sensitive skin",
+        "spf routine"
+      ],
+      "trackedPages": [
+        {
+          "title": "Glow serum landing",
+          "views": 612,
+          "avgTime": "2:18",
+          "conversions": 58
+        },
+        {
+          "title": "Derm partner page",
+          "views": 478,
+          "avgTime": "2:02",
+          "conversions": 36
+        },
+        {
+          "title": "Membership program",
+          "views": 392,
+          "avgTime": "1:51",
+          "conversions": 24
+        },
+        {
+          "title": "Before after gallery",
+          "views": 310,
+          "avgTime": "1:44",
+          "conversions": 19
+        }
+      ],
+      "backlinks": [
+        {
+          "domain": "outdoorpulse.com",
+          "url": "https://outdoorpulse.com/aurora-trail",
+          "status": "Valid"
+        },
+        {
+          "domain": "cyclecity.co",
+          "url": "https://cyclecity.co/best-gravel",
+          "status": "Valid"
+        },
+        {
+          "domain": "urbancommute.org",
+          "url": "https://urbancommute.org/winter-service",
+          "status": "Check"
+        },
+        {
+          "domain": "rideweekly.io",
+          "url": "https://rideweekly.io/aurora-guide",
+          "status": "Valid"
+        }
+      ]
+    },
+    "northbeam-saaS": {
+      "overview": {
+        "visitors": 13215,
+        "organicSearch": 3391,
+        "adSpend": 282095,
+        "revenue": 1053358,
+        "ctr": 0.02
+      },
+      "trafficSources": [
+        {
+          "label": "Paid Social",
+          "share": 33,
+          "value": 5262,
+          "delta": "+13%"
+        },
+        {
+          "label": "Organic Search",
+          "share": 26,
+          "value": 3083,
+          "delta": "+9%"
+        },
+        {
+          "label": "Direct",
+          "share": 21,
+          "value": 1540,
+          "delta": "+6%"
+        },
+        {
+          "label": "Organic Social",
+          "share": 14,
+          "value": 1070,
+          "delta": "+4%"
+        },
+        {
+          "label": "Referral",
+          "share": 6,
+          "value": 285,
+          "delta": "-2%"
+        }
+      ],
+      "metaAds": {
+        "spend": 282095,
+        "impressions": 686574,
+        "clicks": 15865,
+        "reach": 496231,
+        "ctr": 0.02,
+        "cpc": 18.08,
+        "cpm": 417.72
+      },
+      "metaCampaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 70688,
+          "results": 23205,
+          "type": "Sales"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 56304,
+          "results": 20489,
+          "type": "Sales"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 65425,
+          "results": 7554,
+          "type": "Lead"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 79312,
+          "results": 15816,
+          "type": "App Promo"
+        }
+      ],
+      "sales": {
+        "transactions": 320,
+        "avgOrderValue": 3373,
+        "topProducts": [
+          {
+            "name": "Aurora Buffalo Milk",
+            "revenue": 44550
+          },
+          {
+            "name": "City Commuter Kit",
+            "revenue": 38200
+          },
+          {
+            "name": "Trail Boost Pack",
+            "revenue": 25190
+          },
+          {
+            "name": "Winter Service",
+            "revenue": 19240
+          }
+        ]
+      },
+      "locations": {
+        "rating": 3.95,
+        "totalRatings": 111,
+        "distribution": [
+          {
+            "label": "5 star",
+            "value": 62
+          },
+          {
+            "label": "4 star",
+            "value": 24
+          },
+          {
+            "label": "3 star",
+            "value": 8
+          },
+          {
+            "label": "2 star",
+            "value": 4
+          },
+          {
+            "label": "1 star",
+            "value": 2
+          }
+        ]
+      },
+      "funnel": [
+        {
+          "label": "Page Views",
+          "value": 33817,
+          "delta": "+5%"
+        },
+        {
+          "label": "Add to Cart",
+          "value": 2841,
+          "delta": "+2%"
+        },
+        {
+          "label": "Purchases",
+          "value": 237,
+          "delta": "-1%"
+        }
+      ],
+      "social": {
+        "facebook": {
+          "posts": 4,
+          "followers": 3620
+        },
+        "instagram": {
+          "posts": 5,
+          "followers": 8400
+        },
+        "recentPosts": [
+          {
+            "title": "Cloud Forecast",
+            "accent": "from-slate-200/60 to-sky-200/40"
+          },
+          {
+            "title": "CTO Roundtable",
+            "accent": "from-cyan-200/40 to-blue-200/40"
+          },
+          {
+            "title": "Product Deep Dive",
+            "accent": "from-emerald-200/40 to-lime-200/40"
+          },
+          {
+            "title": "Security Brief",
+            "accent": "from-indigo-200/40 to-violet-200/40"
+          },
+          {
+            "title": "Ops Toolkit",
+            "accent": "from-amber-200/40 to-rose-200/40"
+          },
+          {
+            "title": "Pipeline Wins",
+            "accent": "from-sky-200/40 to-cyan-200/40"
+          }
+        ]
+      },
+      "starredKeywords": [
+        "cloud stack",
+        "b2b marketing",
+        "security ops",
+        "data pipeline",
+        "enterprise cloud"
+      ],
+      "trackedPages": [
+        {
+          "title": "Enterprise landing",
+          "views": 286,
+          "avgTime": "2:05",
+          "conversions": 16
+        },
+        {
+          "title": "Webinar recap",
+          "views": 242,
+          "avgTime": "1:47",
+          "conversions": 11
+        },
+        {
+          "title": "Case study",
+          "views": 198,
+          "avgTime": "1:39",
+          "conversions": 9
+        },
+        {
+          "title": "Product docs",
+          "views": 166,
+          "avgTime": "1:28",
+          "conversions": 6
+        }
+      ],
+      "backlinks": [
+        {
+          "domain": "outdoorpulse.com",
+          "url": "https://outdoorpulse.com/aurora-trail",
+          "status": "Valid"
+        },
+        {
+          "domain": "cyclecity.co",
+          "url": "https://cyclecity.co/best-gravel",
+          "status": "Valid"
+        },
+        {
+          "domain": "urbancommute.org",
+          "url": "https://urbancommute.org/winter-service",
+          "status": "Check"
+        },
+        {
+          "domain": "rideweekly.io",
+          "url": "https://rideweekly.io/aurora-guide",
+          "status": "Valid"
+        }
+      ]
+    },
+    "pulse-athletics": {
+      "overview": {
+        "visitors": 15018,
+        "organicSearch": 3854,
+        "adSpend": 320563,
+        "revenue": 1196998,
+        "ctr": 0.02
+      },
+      "trafficSources": [
+        {
+          "label": "Paid Social",
+          "share": 33,
+          "value": 5262,
+          "delta": "+13%"
+        },
+        {
+          "label": "Organic Search",
+          "share": 26,
+          "value": 3083,
+          "delta": "+9%"
+        },
+        {
+          "label": "Direct",
+          "share": 21,
+          "value": 1540,
+          "delta": "+6%"
+        },
+        {
+          "label": "Organic Social",
+          "share": 14,
+          "value": 1070,
+          "delta": "+4%"
+        },
+        {
+          "label": "Referral",
+          "share": 6,
+          "value": 285,
+          "delta": "-2%"
+        }
+      ],
+      "metaAds": {
+        "spend": 320563,
+        "impressions": 780198,
+        "clicks": 18029,
+        "reach": 563899,
+        "ctr": 0.02,
+        "cpc": 18.52,
+        "cpm": 427.99
+      },
+      "metaCampaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 70688,
+          "results": 23205,
+          "type": "Sales"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 56304,
+          "results": 20489,
+          "type": "Sales"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 65425,
+          "results": 7554,
+          "type": "Lead"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 79312,
+          "results": 15816,
+          "type": "App Promo"
+        }
+      ],
+      "sales": {
+        "transactions": 364,
+        "avgOrderValue": 3497,
+        "topProducts": [
+          {
+            "name": "Aurora Buffalo Milk",
+            "revenue": 44550
+          },
+          {
+            "name": "City Commuter Kit",
+            "revenue": 38200
+          },
+          {
+            "name": "Trail Boost Pack",
+            "revenue": 25190
+          },
+          {
+            "name": "Winter Service",
+            "revenue": 19240
+          }
+        ]
+      },
+      "locations": {
+        "rating": 4.02,
+        "totalRatings": 126,
+        "distribution": [
+          {
+            "label": "5 star",
+            "value": 62
+          },
+          {
+            "label": "4 star",
+            "value": 24
+          },
+          {
+            "label": "3 star",
+            "value": 8
+          },
+          {
+            "label": "2 star",
+            "value": 4
+          },
+          {
+            "label": "1 star",
+            "value": 2
+          }
+        ]
+      },
+      "funnel": [
+        {
+          "label": "Page Views",
+          "value": 38429,
+          "delta": "+5%"
+        },
+        {
+          "label": "Add to Cart",
+          "value": 3229,
+          "delta": "+2%"
+        },
+        {
+          "label": "Purchases",
+          "value": 269,
+          "delta": "-1%"
+        }
+      ],
+      "social": {
+        "facebook": {
+          "posts": 8,
+          "followers": 12480
+        },
+        "instagram": {
+          "posts": 10,
+          "followers": 28640
+        },
+        "recentPosts": [
+          {
+            "title": "Studio Launch",
+            "accent": "from-emerald-200/40 to-cyan-200/40"
+          },
+          {
+            "title": "Coach Spotlight",
+            "accent": "from-orange-200/40 to-rose-200/40"
+          },
+          {
+            "title": "Recovery Series",
+            "accent": "from-sky-200/40 to-indigo-200/40"
+          },
+          {
+            "title": "Member Wins",
+            "accent": "from-lime-200/40 to-amber-200/40"
+          },
+          {
+            "title": "Bootcamp",
+            "accent": "from-amber-200/40 to-pink-200/40"
+          },
+          {
+            "title": "Strength Session",
+            "accent": "from-sky-200/40 to-emerald-200/40"
+          }
+        ]
+      },
+      "starredKeywords": [
+        "studio launch",
+        "strength sessions",
+        "recovery series",
+        "member wins",
+        "bootcamp"
+      ],
+      "trackedPages": [
+        {
+          "title": "Membership page",
+          "views": 412,
+          "avgTime": "1:56",
+          "conversions": 32
+        },
+        {
+          "title": "Class schedule",
+          "views": 368,
+          "avgTime": "1:33",
+          "conversions": 21
+        },
+        {
+          "title": "Corporate wellness",
+          "views": 254,
+          "avgTime": "1:27",
+          "conversions": 13
+        },
+        {
+          "title": "Outdoor bootcamp",
+          "views": 196,
+          "avgTime": "1:18",
+          "conversions": 9
+        }
+      ],
+      "backlinks": [
+        {
+          "domain": "outdoorpulse.com",
+          "url": "https://outdoorpulse.com/aurora-trail",
+          "status": "Valid"
+        },
+        {
+          "domain": "cyclecity.co",
+          "url": "https://cyclecity.co/best-gravel",
+          "status": "Valid"
+        },
+        {
+          "domain": "urbancommute.org",
+          "url": "https://urbancommute.org/winter-service",
+          "status": "Check"
+        },
+        {
+          "domain": "rideweekly.io",
+          "url": "https://rideweekly.io/aurora-guide",
+          "status": "Valid"
+        }
+      ]
+    },
+    "harbor-real-estate": {
+      "overview": {
+        "visitors": 10212,
+        "organicSearch": 2621,
+        "adSpend": 217983,
+        "revenue": 813958,
+        "ctr": 0.02
+      },
+      "trafficSources": [
+        {
+          "label": "Paid Social",
+          "share": 33,
+          "value": 5262,
+          "delta": "+13%"
+        },
+        {
+          "label": "Organic Search",
+          "share": 26,
+          "value": 3083,
+          "delta": "+9%"
+        },
+        {
+          "label": "Direct",
+          "share": 21,
+          "value": 1540,
+          "delta": "+6%"
+        },
+        {
+          "label": "Organic Social",
+          "share": 14,
+          "value": 1070,
+          "delta": "+4%"
+        },
+        {
+          "label": "Referral",
+          "share": 6,
+          "value": 285,
+          "delta": "-2%"
+        }
+      ],
+      "metaAds": {
+        "spend": 217983,
+        "impressions": 530534,
+        "clicks": 12260,
+        "reach": 383451,
+        "ctr": 0.02,
+        "cpc": 17.34,
+        "cpm": 400.6
+      },
+      "metaCampaigns": [
+        {
+          "name": "Summit Gravel Week",
+          "status": "Active",
+          "spend": 70688,
+          "results": 23205,
+          "type": "Sales"
+        },
+        {
+          "name": "Gift Guide Q4",
+          "status": "Active",
+          "spend": 56304,
+          "results": 20489,
+          "type": "Sales"
+        },
+        {
+          "name": "Community Challenge",
+          "status": "Paused",
+          "spend": 65425,
+          "results": 7554,
+          "type": "Lead"
+        },
+        {
+          "name": "Ambassador Launch",
+          "status": "Active",
+          "spend": 79312,
+          "results": 15816,
+          "type": "App Promo"
+        }
+      ],
+      "sales": {
+        "transactions": 247,
+        "avgOrderValue": 3168,
+        "topProducts": [
+          {
+            "name": "Aurora Buffalo Milk",
+            "revenue": 44550
+          },
+          {
+            "name": "City Commuter Kit",
+            "revenue": 38200
+          },
+          {
+            "name": "Trail Boost Pack",
+            "revenue": 25190
+          },
+          {
+            "name": "Winter Service",
+            "revenue": 19240
+          }
+        ]
+      },
+      "locations": {
+        "rating": 3.83,
+        "totalRatings": 86,
+        "distribution": [
+          {
+            "label": "5 star",
+            "value": 62
+          },
+          {
+            "label": "4 star",
+            "value": 24
+          },
+          {
+            "label": "3 star",
+            "value": 8
+          },
+          {
+            "label": "2 star",
+            "value": 4
+          },
+          {
+            "label": "1 star",
+            "value": 2
+          }
+        ]
+      },
+      "funnel": [
+        {
+          "label": "Page Views",
+          "value": 26132,
+          "delta": "+5%"
+        },
+        {
+          "label": "Add to Cart",
+          "value": 2196,
+          "delta": "+2%"
+        },
+        {
+          "label": "Purchases",
+          "value": 183,
+          "delta": "-1%"
+        }
+      ],
+      "social": {
+        "facebook": {
+          "posts": 6,
+          "followers": 6820
+        },
+        "instagram": {
+          "posts": 7,
+          "followers": 12480
+        },
+        "recentPosts": [
+          {
+            "title": "Lakeside Listing",
+            "accent": "from-sky-200/40 to-emerald-200/40"
+          },
+          {
+            "title": "Neighborhood Guide",
+            "accent": "from-amber-200/40 to-orange-200/40"
+          },
+          {
+            "title": "Client Walkthrough",
+            "accent": "from-cyan-200/40 to-indigo-200/40"
+          },
+          {
+            "title": "Market Pulse",
+            "accent": "from-rose-200/40 to-fuchsia-200/40"
+          },
+          {
+            "title": "Open House",
+            "accent": "from-lime-200/40 to-amber-200/40"
+          },
+          {
+            "title": "Luxury Tour",
+            "accent": "from-emerald-200/40 to-sky-200/40"
+          }
+        ]
+      },
+      "starredKeywords": [
+        "luxury listings",
+        "open house",
+        "neighborhood guide",
+        "relocation",
+        "lakeside homes"
+      ],
+      "trackedPages": [
+        {
+          "title": "Luxury listings",
+          "views": 246,
+          "avgTime": "1:49",
+          "conversions": 14
+        },
+        {
+          "title": "Relocation guide",
+          "views": 192,
+          "avgTime": "1:35",
+          "conversions": 9
+        },
+        {
+          "title": "Schedule tour",
+          "views": 166,
+          "avgTime": "1:26",
+          "conversions": 7
+        },
+        {
+          "title": "Market insights",
+          "views": 138,
+          "avgTime": "1:12",
+          "conversions": 5
+        }
+      ],
+      "backlinks": [
+        {
+          "domain": "outdoorpulse.com",
+          "url": "https://outdoorpulse.com/aurora-trail",
+          "status": "Valid"
+        },
+        {
+          "domain": "cyclecity.co",
+          "url": "https://cyclecity.co/best-gravel",
+          "status": "Valid"
+        },
+        {
+          "domain": "urbancommute.org",
+          "url": "https://urbancommute.org/winter-service",
+          "status": "Check"
+        },
+        {
+          "domain": "rideweekly.io",
+          "url": "https://rideweekly.io/aurora-guide",
+          "status": "Valid"
+        }
+      ]
+    }
+  }
+}

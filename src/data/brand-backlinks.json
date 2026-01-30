@@ -1,0 +1,39 @@
+{
+  "header": {
+    "title": "Backlinks",
+    "brand": "Amaltaas",
+    "website": "https://amaltaas.com.pk"
+  },
+  "summary": [
+    { "label": "Total Backlinks", "value": 5, "note": "Tracked backlinks" },
+    { "label": "Active Links", "value": 5, "note": "Currently active" },
+    { "label": "This Month", "value": 0, "note": "Added this month" }
+  ],
+  "backlinks": [
+    {
+      "url": "https://antspride.com/read-blog/60426_top-health-benefits-of-chicken-...",
+      "status": "active",
+      "added": "19/12/2025"
+    },
+    {
+      "url": "https://facerelation.com/read-blog/27892_chicken-yakhni-vs-chicken-...",
+      "status": "active",
+      "added": "19/12/2025"
+    },
+    {
+      "url": "https://inspirejournal.xyz/chicken-broth-for-immunity-why-desi-chicken-...",
+      "status": "active",
+      "added": "19/12/2025"
+    },
+    {
+      "url": "https://enlinking.com/read-blog/82186_what-is-panejeri-use-benefits-a...",
+      "status": "active",
+      "added": "19/12/2025"
+    },
+    {
+      "url": "https://chatterchat.com/read-blog/56400_is-panejeri-healthy-benefits-i...",
+      "status": "active",
+      "added": "19/12/2025"
+    }
+  ]
+}

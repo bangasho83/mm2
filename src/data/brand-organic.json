@@ -1,0 +1,136 @@
+{
+  "header": {
+    "title": "Organic",
+    "brand": "Amaltaas",
+    "website": "https://amaltaas.com.pk"
+  },
+  "summary": [
+    { "label": "Total Users", "value": 10983, "note": "Unique visitors" },
+    { "label": "Engaged Sessions", "value": 9754, "note": "+7.1% engagement" },
+    { "label": "Bounce Rate", "value": 22.9, "note": "Single page sessions" },
+    { "label": "Purchases", "value": 215, "note": "+5 completed orders" }
+  ],
+  "userTrends": [
+    { "date": "12/01", "totalUsers": 210, "engagedSessions": 180, "organicSearch": 160, "paidSearch": 120, "referral": 90 },
+    { "date": "12/03", "totalUsers": 590, "engagedSessions": 420, "organicSearch": 310, "paidSearch": 150, "referral": 110 },
+    { "date": "12/05", "totalUsers": 560, "engagedSessions": 410, "organicSearch": 280, "paidSearch": 140, "referral": 100 },
+    { "date": "12/07", "totalUsers": 430, "engagedSessions": 360, "organicSearch": 240, "paidSearch": 130, "referral": 95 },
+    { "date": "12/09", "totalUsers": 520, "engagedSessions": 410, "organicSearch": 260, "paidSearch": 145, "referral": 105 },
+    { "date": "12/11", "totalUsers": 460, "engagedSessions": 370, "organicSearch": 250, "paidSearch": 135, "referral": 100 },
+    { "date": "12/13", "totalUsers": 440, "engagedSessions": 360, "organicSearch": 240, "paidSearch": 130, "referral": 92 },
+    { "date": "12/15", "totalUsers": 450, "engagedSessions": 370, "organicSearch": 250, "paidSearch": 138, "referral": 98 },
+    { "date": "12/17", "totalUsers": 480, "engagedSessions": 390, "organicSearch": 270, "paidSearch": 140, "referral": 100 },
+    { "date": "12/19", "totalUsers": 520, "engagedSessions": 430, "organicSearch": 300, "paidSearch": 150, "referral": 110 },
+    { "date": "12/21", "totalUsers": 470, "engagedSessions": 390, "organicSearch": 260, "paidSearch": 142, "referral": 105 },
+    { "date": "12/23", "totalUsers": 500, "engagedSessions": 410, "organicSearch": 275, "paidSearch": 148, "referral": 108 },
+    { "date": "12/25", "totalUsers": 420, "engagedSessions": 360, "organicSearch": 240, "paidSearch": 135, "referral": 96 },
+    { "date": "12/27", "totalUsers": 460, "engagedSessions": 380, "organicSearch": 255, "paidSearch": 140, "referral": 100 },
+    { "date": "12/29", "totalUsers": 390, "engagedSessions": 330, "organicSearch": 230, "paidSearch": 128, "referral": 94 }
+  ],
+  "keyEvents": [
+    { "date": "12/01", "pageView": 80, "formSubmit": 45, "purchase": 30, "addToCart": 55 },
+    { "date": "12/03", "pageView": 140, "formSubmit": 70, "purchase": 58, "addToCart": 90 },
+    { "date": "12/05", "pageView": 120, "formSubmit": 65, "purchase": 50, "addToCart": 84 },
+    { "date": "12/07", "pageView": 110, "formSubmit": 60, "purchase": 45, "addToCart": 78 },
+    { "date": "12/09", "pageView": 150, "formSubmit": 75, "purchase": 62, "addToCart": 95 },
+    { "date": "12/11", "pageView": 135, "formSubmit": 68, "purchase": 55, "addToCart": 88 },
+    { "date": "12/13", "pageView": 130, "formSubmit": 66, "purchase": 52, "addToCart": 82 },
+    { "date": "12/15", "pageView": 145, "formSubmit": 72, "purchase": 60, "addToCart": 92 },
+    { "date": "12/17", "pageView": 160, "formSubmit": 80, "purchase": 65, "addToCart": 100 },
+    { "date": "12/19", "pageView": 155, "formSubmit": 78, "purchase": 62, "addToCart": 96 },
+    { "date": "12/21", "pageView": 138, "formSubmit": 70, "purchase": 58, "addToCart": 88 },
+    { "date": "12/23", "pageView": 142, "formSubmit": 72, "purchase": 60, "addToCart": 90 },
+    { "date": "12/25", "pageView": 120, "formSubmit": 60, "purchase": 50, "addToCart": 78 },
+    { "date": "12/27", "pageView": 130, "formSubmit": 66, "purchase": 55, "addToCart": 84 },
+    { "date": "12/29", "pageView": 110, "formSubmit": 58, "purchase": 48, "addToCart": 72 }
+  ],
+  "funnel": [
+    { "label": "Page View", "sessions": 30743, "avgTime": "1m 50s", "dropOff": "92%" },
+    { "label": "Add to Cart", "sessions": 2583, "avgTime": "1m 39s", "dropOff": "92%" },
+    { "label": "Purchase", "sessions": 215, "avgTime": "1m 20s", "dropOff": "Funnel completion rate 8%" }
+  ],
+  "topPages": [
+    {
+      "page": "/shop/dairy-products",
+      "title": "Shop Natural Products | Amaltaas - The Organic Store",
+      "views": 4377,
+      "users": 2302,
+      "avgDuration": "0:49"
+    },
+    {
+      "page": "/",
+      "title": "Amaltaas Chemical Free Natural Products",
+      "views": 3940,
+      "users": 1876,
+      "avgDuration": "1:34"
+    },
+    {
+      "page": "/products/amaltaas-desi-chicken-live-weight-218312",
+      "title": "Amaltaas Desi Chicken Live Weight | Amaltaas - The Organic Store",
+      "views": 3547,
+      "users": 1974,
+      "avgDuration": "0:55"
+    },
+    {
+      "page": "/shop",
+      "title": "Shop Natural Products | Amaltaas - The Organic Store",
+      "views": 1497,
+      "users": 703,
+      "avgDuration": "2:23"
+    },
+    {
+      "page": "/products/amaltaas-pure-desi-ghee-202670",
+      "title": "Amaltaas Pure Desi Ghee | Amaltaas - The Organic Store",
+      "views": 869,
+      "users": 521,
+      "avgDuration": "0:27"
+    },
+    {
+      "page": "/checkout",
+      "title": "Amaltaas",
+      "views": 794,
+      "users": 578,
+      "avgDuration": "2:16"
+    },
+    {
+      "page": "/search",
+      "title": "Shop Natural Products | Amaltaas - The Organic Store",
+      "views": 584,
+      "users": 313,
+      "avgDuration": "1:16"
+    },
+    {
+      "page": "/products/amaltaas-buffalo-milk-202669",
+      "title": "Amaltaas Buffalo Milk | Amaltaas - The Organic Store",
+      "views": 546,
+      "users": 381,
+      "avgDuration": "0:52"
+    },
+    {
+      "page": "/products/amaltaas-cottage-cheese-419753",
+      "title": "Amaltaas Cottage Cheese | Amaltaas - The Organic Store",
+      "views": 525,
+      "users": 291,
+      "avgDuration": "2:23"
+    },
+    {
+      "page": "/shop/powdery-meal",
+      "title": "Shop Natural Products | Amaltaas - The Organic Store",
+      "views": 507,
+      "users": 301,
+      "avgDuration": "1:09"
+    }
+  ],
+  "traffic": [
+    { "label": "Paid Social", "value": 5262, "percent": 47.9, "accent": "pink" },
+    { "label": "Organic Search", "value": 3083, "percent": 28.1, "accent": "blue" },
+    { "label": "Direct", "value": 1540, "percent": 14.0, "accent": "slate" },
+    { "label": "Organic Social", "value": 1070, "percent": 9.7, "accent": "violet" },
+    { "label": "Referral", "value": 28, "percent": 0.3, "accent": "emerald" },
+    { "label": "Paid Search", "value": 0, "percent": 0.0, "accent": "orange" },
+    { "label": "Email", "value": 0, "percent": 0.0, "accent": "sky" },
+    { "label": "Affiliate", "value": 0, "percent": 0.0, "accent": "amber" },
+    { "label": "Display", "value": 0, "percent": 0.0, "accent": "gray" },
+    { "label": "Video", "value": 0, "percent": 0.0, "accent": "indigo" }
+  ]
+}

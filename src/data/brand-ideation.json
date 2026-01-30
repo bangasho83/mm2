@@ -1,0 +1,114 @@
+{
+  "header": {
+    "title": "Calendar",
+    "brand": "Amaltaas",
+    "website": "https://amaltaas.com.pk"
+  },
+  "dateRange": {
+    "from": "01/01/2026",
+    "to": "31/01/2026"
+  },
+  "filters": [
+    { "label": "Social", "count": 10 },
+    { "label": "Ad Campaign", "count": 4 },
+    { "label": "Content Page", "count": 2 },
+    { "label": "Newsletter", "count": 0 }
+  ],
+  "summaryChips": [
+    { "label": "Monthly Budget", "value": "Rs.250,000" },
+    { "label": "Blogs", "value": "2" },
+    { "label": "Budget", "value": "Rs.187,000" }
+  ],
+  "calendar": {
+    "monthLabel": "January 2026",
+    "weeks": [
+      {
+        "days": [
+          { "date": "29", "month": "Dec", "items": [] },
+          { "date": "30", "month": "Dec", "items": [] },
+          { "date": "31", "month": "Dec", "items": [] },
+          { "date": "1", "month": "Jan", "items": [] },
+          { "date": "2", "month": "Jan", "items": [] },
+          { "date": "3", "month": "Jan", "items": [
+            { "type": "Social", "title": "Amaltaas Greek Yogurt", "status": "Assigned", "label": "Awareness" }
+          ] },
+          { "date": "4", "month": "Jan", "items": [
+            { "type": "Social", "title": "Dry Fruits reel", "status": "Assigned", "label": "UGC" }
+          ] }
+        ]
+      },
+      {
+        "days": [
+          { "date": "5", "month": "Jan", "items": [] },
+          { "date": "6", "month": "Jan", "items": [] },
+          { "date": "7", "month": "Jan", "items": [
+            { "type": "Ad Campaign", "title": "Amaltaas Dairy Ad", "status": "Draft", "label": "Sales" }
+          ] },
+          { "date": "8", "month": "Jan", "items": [] },
+          { "date": "9", "month": "Jan", "items": [
+            { "type": "Social", "title": "Amaltaas Brownies", "status": "Assigned", "label": "Awareness" }
+          ] },
+          { "date": "10", "month": "Jan", "items": [
+            { "type": "Ad Campaign", "title": "Desi Ghee vid ad", "status": "Draft", "label": "Sales" }
+          ] },
+          { "date": "11", "month": "Jan", "items": [
+            { "type": "Social", "title": "Amaltaas Desi Chicken", "status": "Assigned", "label": "UGC" }
+          ] }
+        ]
+      },
+      {
+        "days": [
+          { "date": "12", "month": "Jan", "items": [] },
+          { "date": "13", "month": "Jan", "items": [
+            { "type": "Social", "title": "Granola Bowl", "status": "Assigned", "label": "Awareness" }
+          ] },
+          { "date": "14", "month": "Jan", "items": [] },
+          { "date": "15", "month": "Jan", "items": [
+            { "type": "Ad Campaign", "title": "Desi Ghee & Butter", "status": "Assigned", "label": "Sales" }
+          ] },
+          { "date": "16", "month": "Jan", "items": [] },
+          { "date": "17", "month": "Jan", "items": [
+            { "type": "Social", "title": "All paneer", "status": "Assigned", "label": "UGC" }
+          ] },
+          { "date": "18", "month": "Jan", "items": [
+            { "type": "Ad Campaign", "title": "Ramadan Special Sales Ad", "status": "Draft", "label": "Sales" }
+          ] }
+        ]
+      },
+      {
+        "days": [
+          { "date": "19", "month": "Jan", "items": [] },
+          { "date": "20", "month": "Jan", "items": [
+            { "type": "Social", "title": "Amaltaas chicken broth reel", "status": "Assigned", "label": "Awareness" }
+          ] },
+          { "date": "21", "month": "Jan", "items": [] },
+          { "date": "22", "month": "Jan", "items": [
+            { "type": "Social", "title": "Desi Ghee & Butter", "status": "Assigned", "label": "Awareness" }
+          ] },
+          { "date": "23", "month": "Jan", "items": [
+            { "type": "Content Page", "title": "Static Category Page: Healthy Grocery", "status": "Assigned", "label": "Web Page" }
+          ] },
+          { "date": "24", "month": "Jan", "items": [
+            { "type": "Social", "title": "Honey reel", "status": "Assigned", "label": "UGC" }
+          ] },
+          { "date": "25", "month": "Jan", "items": [] }
+        ]
+      },
+      {
+        "days": [
+          { "date": "26", "month": "Jan", "items": [] },
+          { "date": "27", "month": "Jan", "items": [] },
+          { "date": "28", "month": "Jan", "items": [] },
+          { "date": "29", "month": "Jan", "items": [] },
+          { "date": "30", "month": "Jan", "items": [
+            { "type": "Content Page", "title": "Static Category Page: Customized Ramadan Gift Baskets", "status": "Assigned", "label": "Web Page" }
+          ] },
+          { "date": "31", "month": "Jan", "items": [
+            { "type": "Social", "title": "Amaltaas Granola Cookies", "status": "Draft", "label": "Awareness" }
+          ] },
+          { "date": "1", "month": "Feb", "items": [] }
+        ]
+      }
+    ]
+  }
+}

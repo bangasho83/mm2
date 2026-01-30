@@ -1,0 +1,12 @@
+{
+  "/page": "app/page.js",
+  "/workspace/page": "app/workspace/page.js",
+  "/brand/[clientId]/page": "app/brand/[clientId]/page.js",
+  "/brand/mood/page": "app/brand/mood/page.js",
+  "/brand/ideation/page": "app/brand/ideation/page.js",
+  "/brand/page": "app/brand/page.js",
+  "/brand/sales/page": "app/brand/sales/page.js",
+  "/brand/social/page": "app/brand/social/page.js",
+  "/brand/meta/page": "app/brand/meta/page.js",
+  "/brand/organic/page": "app/brand/organic/page.js"
+}

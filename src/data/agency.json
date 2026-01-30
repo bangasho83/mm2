@@ -1,0 +1,57 @@
+{
+  "workspace": {
+    "name": "Northwind Creative",
+    "activeClients": 12
+  },
+  "user": {
+    "name": "Ari Kaplan",
+    "initials": "AK"
+  },
+  "dateRanges": [
+    "Dec 1 - Dec 14, 2025",
+    "Nov 15 - Nov 30, 2025",
+    "Oct 1 - Oct 31, 2025"
+  ],
+  "targets": {
+    "roasTarget": 4.5
+  },
+  "briefs": [
+    {
+      "clientId": "aurora-bikes",
+      "note": "Engagement up 12% this week",
+      "delta": "+12%"
+    },
+    {
+      "clientId": "bloom-cafe",
+      "note": "Reels drove 18% more saves",
+      "delta": "+18%"
+    },
+    {
+      "clientId": "nova-skincare",
+      "note": "Influencer spark raised ROAS",
+      "delta": "+9%"
+    }
+  ],
+  "moments": [
+    {
+      "clientId": "northbeam-saaS",
+      "title": "Content sprint planning and paid refresh",
+      "day": "Monday"
+    },
+    {
+      "clientId": "pulse-athletics",
+      "title": "New Year membership push",
+      "day": "Tuesday"
+    },
+    {
+      "clientId": "harbor-real-estate",
+      "title": "Listing walkthrough shoot",
+      "day": "Wednesday"
+    },
+    {
+      "clientId": "bloom-cafe",
+      "title": "Seasonal menu photo day",
+      "day": "Thursday"
+    }
+  ]
+}

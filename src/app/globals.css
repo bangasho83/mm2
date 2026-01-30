@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: var(--font-body), sans-serif;
+  background-color: #f7f9ff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #1e293b;
+  background: #f7f9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.recharts-wrapper text {
+  font-family: "Manrope", sans-serif;
+}
